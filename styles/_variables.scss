@@ -1,0 +1,24 @@
+@use "helpers" as *;
+
+:root {
+  --color-dark: #000000;
+
+  --color-gray: #4d4d4d;
+
+  --color-blue: #81adc8;
+
+  --color-accent: #cd4631;
+
+  --color-light-main: #edf3f7;
+
+  --color-light-second: #f7ede8;
+
+  --border: #{rem(2)} solid var(--color-dark);
+
+  --container-width: #{rem(1160)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  --font-famaly-main: "Montserrat Alternates", sans-serif;
+}

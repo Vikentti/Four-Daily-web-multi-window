@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FourDaily</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/min.js"></script>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__body container">
+        <a href="#" class="header__logo logo">
+          <img
+            src="./images/Head/header_logo.svg"
+            alt=""
+            class="header__logo"
+            height="74"
+            width="74"
+          />
+        </a>
+
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Episodes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">More</a>
+              </li>
+            </ul>
+
+            <ul class="header__button-list">
+              <li class="header__button-item">
+                <a href="#" class="header__button-link button button--light"
+                  >RECENT EPISODES</a
+                >
+              </li>
+              <li class="header__button-item">
+                <a href="#" class="header__button-link button button--dark"
+                  >SUBSCRIBE</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+  </body>
+</html>

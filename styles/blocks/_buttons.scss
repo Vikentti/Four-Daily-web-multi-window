@@ -1,0 +1,25 @@
+@use "../helpers" as *;
+
+.button {
+  font-weight: 600;
+  font-size: rem(14);
+  padding: rem(12) rem(24);
+  border: 2px solid var(--color-dark);
+  border-radius: 8px;
+  text-align: center;
+
+  @include tablet {
+    // padding: rem(6) rem(12);
+    // font-size: rem(12);
+  }
+
+  &--dark {
+    background-color: var(--color-dark);
+    color: var(--color-light-main);
+  }
+
+  &--light {
+    background-color: transparent;
+    color: var(--color-dark);
+  }
+}

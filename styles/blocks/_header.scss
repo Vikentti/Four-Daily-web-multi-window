@@ -1,0 +1,69 @@
+@use "../helpers" as *;
+
+.header {
+  background-color: var(--color-light-second);
+
+  &__body {
+    display: flex;
+    column-gap: rem(120);
+    justify-content: start;
+    align-items: center;
+    padding-block: rem(24);
+
+    @include tablet {
+      column-gap: rem(60);
+    }
+  }
+
+  &__overlay {
+    @include mobile-above {
+      display: contents;
+    }
+
+    @include mobile {
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: rem(60);
+      font-weight: 600;
+
+      @include tablet {
+        column-gap: rem(40);
+      }
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+    }
+  }
+
+  &__button-list {
+    display: flex;
+    column-gap: rem(20);
+
+    @include tablet {
+      column-gap: rem(10);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+    }
+  }
+}
