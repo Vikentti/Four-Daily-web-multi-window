@@ -1,6 +1,9 @@
 @use "../helpers" as *;
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: var(--color-light-second);
 
   &__body {
@@ -10,8 +13,24 @@
     align-items: center;
     padding-block: rem(24);
 
+    animation-name: scrolling-header;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: rem(100) rem(190);
+
+    @keyframes scrolling-header {
+      to {
+        height: rem(75);
+        box-shadow: 0 2px 2px -2px rgb(0 0 0 / 0.5);
+      }
+    }
+
     @include tablet {
       column-gap: rem(60);
+    }
+
+    @include mobile {
+      justify-content: space-between;
     }
   }
 
@@ -21,6 +40,20 @@
     }
 
     @include mobile {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      background-color: var(--color-light-second);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
     }
   }
 
@@ -31,7 +64,8 @@
 
     @include mobile {
       flex-direction: column;
-      row-gap: 1rem;
+      row-gap: 3rem;
+      overflow-y: auto;
     }
 
     &-list {
@@ -47,7 +81,14 @@
 
       @include mobile {
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: 3rem;
+      }
+    }
+
+    &-link {
+      @include mobile {
+        padding: rem(15) rem(30);
+        font-size: rem(15);
       }
     }
   }
@@ -63,7 +104,8 @@
     @include mobile {
       flex-direction: column;
       align-items: center;
-      row-gap: 1rem;
+      row-gap: 3rem;
+      font-size: rem(30);
     }
   }
 }

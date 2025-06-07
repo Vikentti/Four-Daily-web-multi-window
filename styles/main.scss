@@ -8,3 +8,10 @@
 @use "blocks/buttons";
 @use "blocks/burger-button";
 @use "blocks/logo";
+@use "blocks/footer";
+
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  display: none !important;
+}

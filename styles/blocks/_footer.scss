@@ -1,0 +1,187 @@
+@use "../helpers" as *;
+
+.footer {
+  padding-top: rem(140);
+  padding-bottom: rem(80);
+  background-color: var(--color-light-second);
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 32%;
+    padding-bottom: rem(140);
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "lorem about"
+        "sosial sosial";
+      gap: rem(60);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "lorem"
+        "about"
+        "sosial";
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__lorem {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40);
+    max-width: rem(269);
+
+    @include tablet {
+      grid-area: lorem;
+    }
+
+    @include mobile {
+      justify-content: center;
+      align-items: center;
+      min-width: 100%;
+    }
+
+    &-year {
+      display: flex;
+      align-items: end;
+      column-gap: rem(25);
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: rem(20);
+      }
+    }
+
+    &-data {
+      font-size: rem(12);
+    }
+
+    &-text {
+      font-size: rem(14);
+    }
+
+    &-links {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: rem(25);
+    }
+  }
+
+  &__about {
+    display: flex;
+    column-gap: rem(93);
+
+    @include tablet {
+      grid-area: about;
+      padding-top: rem(5);
+    }
+
+    @include mobile {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(20);
+      font-size: rem(16);
+    }
+
+    &-accent {
+      color: var(--color-accent);
+    }
+  }
+
+  &__sosial {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(60);
+
+    @include tablet {
+      grid-area: sosial;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__platforms {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(29);
+
+    @include mobile {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-title {
+      max-width: rem(324);
+    }
+
+    &-list {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: rem(38.5);
+    }
+  }
+
+  &__avalible {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+
+    &-list {
+      display: flex;
+      column-gap: rem(20);
+
+      @include mobile {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__dops {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(20);
+    font-size: rem(12);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 125;
+      top: 0;
+      width: 97.5%;
+      height: rem(1);
+      background-color: var(--color-dark);
+    }
+
+    &-list {
+      position: relative;
+      display: flex;
+      align-items: center;
+      column-gap: rem(24);
+
+      &::after {
+        @include square(rem(2));
+
+        position: absolute;
+        content: "";
+        left: rem(48);
+        top: 10;
+
+        background-color: var(--color-gray);
+      }
+    }
+  }
+}
