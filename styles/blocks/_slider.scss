@@ -1,0 +1,56 @@
+@use "../helpers" as *;
+
+.slider {
+  &__list {
+    display: flex;
+    column-gap: rem(55);
+    overflow: hidden;
+    color: var(--color-blue);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    padding: rem(20);
+    min-width: rem(420);
+    height: rem(420);
+    border-radius: rem(12);
+
+    @include laptop {
+      min-width: rem(373);
+      height: rem(373);
+    }
+  }
+
+  &__sosial-list {
+    display: flex;
+    justify-content: end;
+    column-gap: rem(10);
+  }
+
+  &__text {
+    letter-spacing: rem(-4);
+    color: var(--color-blue);
+  }
+
+  &__slider-1 {
+    background-image: url(../../images/Hero/auto_scroll-1.png);
+  }
+  &__slider-2 {
+    background-image: url(../../images/Hero/auto_scroll-2.png);
+  }
+  &__slider-3 {
+    background-image: url(../../images/Hero/auto_scroll-3.png);
+  }
+  &__slider-4 {
+    background-image: url(../../images/Hero/auto_scroll-4.png);
+  }
+  &__slider-5 {
+    background-image: url(../../images/Hero/auto_scroll-5.png);
+  }
+  &__slider-6 {
+    background-image: url(../../images/Hero/auto_scroll-6.png);
+  }
+}

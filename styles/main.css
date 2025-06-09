@@ -295,7 +295,7 @@ h2,
 h3,
 .h3 {
   font-family: var(--font-famaly-main);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4,
@@ -321,7 +321,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: clamp(1.3125rem, 0.9410714286rem + 1.5238095238vw, 2.3125rem);
+  font-size: clamp(1.3125rem, 0.9642857143rem + 1.4285714286vw, 2.25rem);
 }
 
 h4,
@@ -402,12 +402,13 @@ button[aria-label]::before {
   animation-name: scrolling-header;
   animation-fill-mode: both;
   animation-timeline: scroll();
-  animation-range: 6.25rem 11.875rem;
+  animation-range: 3.125rem 18.75rem;
+  animation-timing-function: ease;
 }
 @keyframes scrolling-header {
   to {
-    height: 4.6875rem;
-    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
+    padding-block: 0;
+    box-shadow: 0 2px 2px -100px rgba(0, 0, 0, 0.5);
   }
 }
 @media (width <= 63.99875rem) {
@@ -732,10 +733,83 @@ button[aria-label]::before {
   background-color: var(--color-gray);
 }
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
+.hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7.5rem;
+  background-color: var(--color-light-second);
+}
+.hero__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  text-align: center;
+}
+.hero__main::after {
+  position: absolute;
+  content: url("../../images/Hero/black_line.svg");
+  top: 0;
+  left: 0;
+}
+.hero__main::before {
+  position: absolute;
+  content: url(../../images/Hero/stars.svg);
+  bottom: 6.25rem;
+  right: 3.125rem;
+}
+
+.slider__list {
+  display: flex;
+  column-gap: 3.4375rem;
+  overflow: hidden;
+  color: var(--color-blue);
+}
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  padding: 1.25rem;
+  min-width: 26.25rem;
+  height: 26.25rem;
+  border-radius: 0.75rem;
+}
+@media (width <= 90.06125rem) {
+  .slider__item {
+    min-width: 23.3125rem;
+    height: 23.3125rem;
+  }
+}
+.slider__sosial-list {
+  display: flex;
+  justify-content: end;
+  column-gap: 0.625rem;
+}
+.slider__text {
+  letter-spacing: -0.25rem;
+  color: var(--color-blue);
+}
+.slider__slider-1 {
+  background-image: url(../../images/Hero/auto_scroll-1.png);
+}
+.slider__slider-2 {
+  background-image: url(../../images/Hero/auto_scroll-2.png);
+}
+.slider__slider-3 {
+  background-image: url(../../images/Hero/auto_scroll-3.png);
+}
+.slider__slider-4 {
+  background-image: url(../../images/Hero/auto_scroll-4.png);
+}
+.slider__slider-5 {
+  background-image: url(../../images/Hero/auto_scroll-5.png);
+}
+.slider__slider-6 {
+  background-image: url(../../images/Hero/auto_scroll-6.png);
 }
 
 /*# sourceMappingURL=main.css.map */

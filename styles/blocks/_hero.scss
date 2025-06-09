@@ -1,0 +1,33 @@
+@use "../helpers" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(120);
+  background-color: var(--color-light-second);
+
+  &__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40);
+    align-items: center;
+    justify-content: center;
+    padding-top: rem(64);
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      content: url("../../images/Hero/black_line.svg");
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: url(../../images/Hero/stars.svg);
+      bottom: rem(100);
+      right: rem(50);
+    }
+  }
+}

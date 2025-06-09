@@ -16,12 +16,14 @@
     animation-name: scrolling-header;
     animation-fill-mode: both;
     animation-timeline: scroll();
-    animation-range: rem(100) rem(190);
+    animation-range: rem(50) rem(300);
+    animation-timing-function: ease;
 
     @keyframes scrolling-header {
       to {
-        height: rem(75);
-        box-shadow: 0 2px 2px -2px rgb(0 0 0 / 0.5);
+        // height: rem(75);
+        padding-block: 0;
+        box-shadow: 0 2px 2px -100px rgb(0 0 0 / 0.5);
       }
     }
 

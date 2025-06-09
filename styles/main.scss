@@ -9,9 +9,11 @@
 @use "blocks/burger-button";
 @use "blocks/logo";
 @use "blocks/footer";
+@use "blocks/hero";
+@use "blocks/slider";
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
-}
+// .header,
+// .footer,
+// main > *:not(:last-of-type) {
+//   display: none !important;
+// }
