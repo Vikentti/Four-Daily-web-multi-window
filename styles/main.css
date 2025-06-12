@@ -286,30 +286,12 @@ h5,
 h6,
 .h6 {
   color: var(--color-dark);
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  font-family: var(--font-famaly-main);
-  font-weight: 600;
-}
-
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
   font-weight: 600;
 }
 
 h1,
 .h1 {
-  font-size: clamp(2.8125rem, 1.6285714286rem + 4.8571428571vw, 6rem);
+  font-size: clamp(4.125rem, 3.4285714286rem + 2.8571428571vw, 6rem);
   line-height: 1.2;
 }
 
@@ -734,10 +716,17 @@ button[aria-label]::before {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 7.5rem;
+  padding-bottom: 8.75rem;
   background-color: var(--color-light-second);
+}
+@media (width <= 47.99875rem) {
+  .hero {
+    row-gap: 3.75rem;
+  }
 }
 .hero__main {
   position: relative;
@@ -748,40 +737,161 @@ button[aria-label]::before {
   justify-content: center;
   padding-top: 4rem;
   text-align: center;
+  z-index: 10;
 }
 .hero__main::after {
   position: absolute;
   content: url("../../images/Hero/black_line.svg");
-  top: 0;
+  top: 3.75rem;
   left: 0;
 }
 .hero__main::before {
   position: absolute;
   content: url(../../images/Hero/stars.svg);
   bottom: 6.25rem;
-  right: 3.125rem;
+  right: 0;
+}
+@media (width <= 47.99875rem) {
+  .hero__main::before, .hero__main::after {
+    display: none;
+  }
+}
+.hero__main-button {
+  max-height: 4.0625rem;
+  max-width: 11.5rem;
+  line-height: 17px;
+  padding: 1.5rem 3rem;
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
+}
+.hero__links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.25rem;
+  width: 100%;
+}
+.hero__links::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 1rem;
+  height: 1px;
+  width: 95%;
+  background-color: var(--color-dark);
+}
+.hero__links::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 1rem;
+  height: 1px;
+  width: 95%;
+  background-color: var(--color-dark);
+}
+@media (width <= 47.99875rem) {
+  .hero__links::after, .hero__links::before {
+    width: 50%;
+    left: 25%;
+  }
+}
+@media (width <= 47.99875rem) {
+  .hero__links {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+}
+.hero__links-list {
+  display: flex;
+  column-gap: 1.25rem;
+  min-height: 5.25rem;
+}
+@media (width <= 47.99875rem) {
+  .hero__links-list {
+    flex-direction: column;
+    row-gap: 1.5625rem;
+  }
+}
+.hero__links-item {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: clamp(6.25rem, 2.1875rem + 16.6666666667vw, 17.1875rem);
+}
+.hero::after {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  content: url(../../icons/red_zig-zag.svg);
+  bottom: -5.375rem;
 }
 
-.slider__list {
-  display: flex;
-  column-gap: 3.4375rem;
+.slider__body {
+  width: 100%;
   overflow: hidden;
+}
+.slider__list {
+  --itemWidth: 25rem;
+  --colGap: 2.1875rem;
+  --itemFullWidth: calc(var(--itemWidth) + var(--colGap));
+  position: relative;
+  display: flex;
+  column-gap: var(--colGap);
+  max-width: 90rem;
   color: var(--color-blue);
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--itemFullWidth) * -6));
+  }
+}
+@media (width <= 90.06125rem) {
+  .slider__list {
+    --itemWidth: 21.875rem;
+    --colGap: 1.25rem;
+  }
+}
+@media (width <= 63.99875rem) {
+  .slider__list {
+    --itemWidth: 18.75rem;
+    --colGap: 0.9375rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .slider__list {
+    --itemWidth: 15.625rem;
+    --colGap: 0.625rem;
+  }
 }
 .slider__item {
+  --size: 25rem;
+  min-width: var(--size);
+  height: var(--size);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
   padding: 1.25rem;
-  min-width: 26.25rem;
-  height: 26.25rem;
   border-radius: 0.75rem;
 }
 @media (width <= 90.06125rem) {
   .slider__item {
-    min-width: 23.3125rem;
-    height: 23.3125rem;
+    --size: 21.875rem;
+  }
+}
+@media (width <= 63.99875rem) {
+  .slider__item {
+    --size: 18.75rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .slider__item {
+    --size: 15.625rem;
   }
 }
 .slider__sosial-list {
@@ -810,6 +920,12 @@ button[aria-label]::before {
 }
 .slider__slider-6 {
   background-image: url(../../images/Hero/auto_scroll-6.png);
+}
+
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

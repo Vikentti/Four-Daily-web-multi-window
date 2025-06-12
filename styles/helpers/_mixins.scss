@@ -49,6 +49,11 @@
   height: $size;
 }
 
+@mixin squareMinWidth($size) {
+  min-width: $size;
+  height: $size;
+}
+
 @mixin visually-hidden {
   position: absolute !important;
   width: 1px !important;

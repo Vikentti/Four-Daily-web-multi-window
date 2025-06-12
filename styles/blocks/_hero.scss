@@ -1,10 +1,16 @@
 @use "../helpers" as *;
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: rem(120);
+  padding-bottom: rem(140);
   background-color: var(--color-light-second);
+
+  @include mobile {
+    row-gap: rem(60);
+  }
 
   &__main {
     position: relative;
@@ -15,11 +21,12 @@
     justify-content: center;
     padding-top: rem(64);
     text-align: center;
+    z-index: 10;
 
     &::after {
       position: absolute;
       content: url("../../images/Hero/black_line.svg");
-      top: 0;
+      top: rem(60);
       left: 0;
     }
 
@@ -27,7 +34,91 @@
       position: absolute;
       content: url(../../images/Hero/stars.svg);
       bottom: rem(100);
-      right: rem(50);
+      right: 0;
     }
+
+    &::before,
+    &::after {
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-button {
+      max-height: rem(65);
+      max-width: rem(184);
+      line-height: 17px;
+      padding: rem(24) rem(48);
+      box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: rem(20);
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: rem(16);
+      height: 1px;
+      width: 95%;
+      background-color: var(--color-dark);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: rem(16);
+      height: 1px;
+      width: 95%;
+      background-color: var(--color-dark);
+    }
+
+    &::after,
+    &::before {
+      @include mobile {
+        width: 50%;
+        left: 25%;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(40);
+    }
+
+    &-list {
+      display: flex;
+      column-gap: rem(20);
+      min-height: rem(84);
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: rem(25);
+      }
+    }
+
+    &-item {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      // min-width: rem(275);
+      width: fluid(275, 100);
+    }
+  }
+
+  &::after {
+    @include abs-x;
+
+    content: url(../../icons/red_zig-zag.svg);
+    bottom: rem(-86);
   }
 }

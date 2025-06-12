@@ -1,26 +1,65 @@
 @use "../helpers" as *;
 
 .slider {
-  &__list {
-    display: flex;
-    column-gap: rem(55);
+  &__body {
+    width: 100%;
     overflow: hidden;
+  }
+  &__list {
+    --itemWidth: #{rem(400)};
+    --colGap: #{rem(35)};
+    --itemFullWidth: calc(var(--itemWidth) + var(--colGap));
+
+    position: relative;
+    display: flex;
+    column-gap: var(--colGap);
+    max-width: rem(1440);
     color: var(--color-blue);
+    animation: scroll 10s linear infinite;
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(var(--itemFullWidth) * -6));
+      }
+    }
+
+    @include laptop {
+      --itemWidth: #{rem(350)};
+      --colGap: #{rem(20)};
+    }
+    @include tablet {
+      --itemWidth: #{rem(300)};
+      --colGap: #{rem(15)};
+    }
+    @include mobile {
+      --itemWidth: #{rem(250)};
+      --colGap: #{rem(10)};
+    }
   }
 
   &__item {
+    --size: #{rem(400)};
+
+    @include squareMinWidth(var(--size));
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-size: cover;
     padding: rem(20);
-    min-width: rem(420);
-    height: rem(420);
     border-radius: rem(12);
 
     @include laptop {
-      min-width: rem(373);
-      height: rem(373);
+      --size: #{rem(350)};
+    }
+    @include tablet {
+      --size: #{rem(300)};
+    }
+    @include mobile {
+      --size: #{rem(250)};
     }
   }
 

@@ -12,8 +12,8 @@
 @use "blocks/hero";
 @use "blocks/slider";
 
-// .header,
-// .footer,
-// main > *:not(:last-of-type) {
-//   display: none !important;
-// }
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  display: none !important;
+}
