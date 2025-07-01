@@ -9,8 +9,8 @@
   text-align: center;
 
   @include tablet {
-    // padding: rem(6) rem(12);
-    // font-size: rem(12);
+    padding: rem(6) rem(12);
+    font-size: rem(12);
   }
 
   &--dark {

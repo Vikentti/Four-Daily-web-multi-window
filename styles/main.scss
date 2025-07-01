@@ -3,7 +3,6 @@
 @use "variables";
 @use "utils";
 @use "globals";
-
 @use "blocks/header";
 @use "blocks/buttons";
 @use "blocks/burger-button";
@@ -11,9 +10,11 @@
 @use "blocks/footer";
 @use "blocks/hero";
 @use "blocks/slider";
+@use "blocks/inspired";
+@use "blocks/person";
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
-}
+// .header,
+// .footer,
+// main > *:not(:last-of-type) {
+//   display: none !important;
+// }

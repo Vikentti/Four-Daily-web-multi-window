@@ -1,0 +1,72 @@
+@use "../helpers" as *;
+
+.inspired {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: rem(110);
+  padding-block: rem(140);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__lorem {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: rem(216);
+      text-align: center;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(40);
+    }
+
+    &-img {
+      margin: 0 auto;
+    }
+  }
+
+  &__comment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(40);
+    padding-block: rem(40);
+    width: 100%;
+    background-color: var(--color-light-second);
+
+    &::after {
+      position: absolute;
+      content: url(../../images/inspire/line.svg);
+      left: rem(-65);
+      bottom: rem(50);
+      overflow: hidden;
+    }
+
+    &::before {
+      position: absolute;
+      content: url(../../images/inspire/Star.svg);
+      top: rem(-55);
+      right: rem(-45);
+      overflow: hidden;
+    }
+
+    &-img {
+      margin-inline: auto;
+    }
+
+    &-text {
+      text-align: center;
+    }
+  }
+}

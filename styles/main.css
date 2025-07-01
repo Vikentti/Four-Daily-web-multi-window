@@ -255,6 +255,22 @@ svg * {
   color: var(--color-gray);
 }
 
+.red-zig::after {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  content: url(../../icons/red_zig-zag.svg);
+  bottom: -5.375rem;
+}
+
+.black-zig::after {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  content: url(../../icons/black-zig.svg);
+  bottom: -5.375rem;
+}
+
 html.is-lock {
   overflow: hidden;
 }
@@ -486,6 +502,12 @@ button[aria-label]::before {
   border: 2px solid var(--color-dark);
   border-radius: 8px;
   text-align: center;
+}
+@media (width <= 63.99875rem) {
+  .button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
 }
 .button--dark {
   background-color: var(--color-dark);
@@ -819,13 +841,6 @@ button[aria-label]::before {
   align-items: center;
   width: clamp(6.25rem, 2.1875rem + 16.6666666667vw, 17.1875rem);
 }
-.hero::after {
-  position: absolute;
-  left: 50%;
-  translate: -50%;
-  content: url(../../icons/red_zig-zag.svg);
-  bottom: -5.375rem;
-}
 
 .slider__body {
   width: 100%;
@@ -922,10 +937,84 @@ button[aria-label]::before {
   background-image: url(../../images/Hero/auto_scroll-6.png);
 }
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
+.inspired {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6.875rem;
+  padding-block: 8.75rem;
+}
+.inspired__title {
+  text-align: center;
+}
+.inspired__lorem-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 13.5rem;
+  text-align: center;
+}
+@media (width <= 47.99875rem) {
+  .inspired__lorem-list {
+    grid-template-columns: 1fr;
+  }
+}
+.inspired__lorem-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.inspired__lorem-img {
+  margin: 0 auto;
+}
+.inspired__comment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+  padding-block: 2.5rem;
+  width: 100%;
+  background-color: var(--color-light-second);
+}
+.inspired__comment::after {
+  position: absolute;
+  content: url(../../images/inspire/line.svg);
+  left: -4.0625rem;
+  bottom: 3.125rem;
+  overflow: hidden;
+}
+.inspired__comment::before {
+  position: absolute;
+  content: url(../../images/inspire/Star.svg);
+  top: -3.4375rem;
+  right: -2.8125rem;
+  overflow: hidden;
+}
+.inspired__comment-img {
+  margin-inline: auto;
+}
+.inspired__comment-text {
+  text-align: center;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  font-size: 0.875rem;
+}
+.person__img {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 6.1875rem;
+}
+.person__job {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

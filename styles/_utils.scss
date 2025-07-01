@@ -29,3 +29,21 @@
 .gray-color {
   color: var(--color-gray);
 }
+
+.red-zig {
+  &::after {
+    @include abs-x;
+
+    content: url(../../icons/red_zig-zag.svg);
+    bottom: rem(-86);
+  }
+}
+
+.black-zig {
+  &::after {
+    @include abs-x;
+
+    content: url(../../icons/black-zig.svg);
+    bottom: rem(-86);
+  }
+}

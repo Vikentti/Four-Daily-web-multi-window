@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+.person {
+  display: flex;
+  align-items: center;
+  column-gap: rem(10);
+  font-size: rem(14);
+
+  &__img {
+    --size: #{rem(48)};
+
+    @include square(var(--size));
+
+    border-radius: rem(99);
+  }
+
+  &__job {
+    display: flex;
+    align-items: center;
+    column-gap: rem(8);
+    font-weight: 600;
+  }
+}
