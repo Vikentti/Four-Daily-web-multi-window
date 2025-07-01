@@ -261,6 +261,7 @@ svg * {
   translate: -50%;
   content: url(../../icons/red_zig-zag.svg);
   bottom: -5.375rem;
+  z-index: 100;
 }
 
 .black-zig::after {
@@ -269,6 +270,19 @@ svg * {
   translate: -50%;
   content: url(../../icons/black-zig.svg);
   bottom: -5.375rem;
+  z-index: 100;
+}
+
+.bg-main {
+  background-color: var(--color-light-main);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-second {
+  background-color: var(--color-light-second);
 }
 
 html.is-lock {
@@ -944,6 +958,7 @@ button[aria-label]::before {
   align-items: center;
   row-gap: 6.875rem;
   padding-block: 8.75rem;
+  background-color: #fff;
 }
 .inspired__title {
   text-align: center;
@@ -981,15 +996,20 @@ button[aria-label]::before {
   position: absolute;
   content: url(../../images/inspire/line.svg);
   left: -4.0625rem;
-  bottom: 3.125rem;
+  bottom: 20%;
   overflow: hidden;
 }
 .inspired__comment::before {
   position: absolute;
   content: url(../../images/inspire/Star.svg);
-  top: -3.4375rem;
   right: -2.8125rem;
+  top: -20%;
   overflow: hidden;
+}
+@media (width <= 47.99875rem) {
+  .inspired__comment::before {
+    right: -5.9375rem;
+  }
 }
 .inspired__comment-img {
   margin-inline: auto;
@@ -1004,6 +1024,12 @@ button[aria-label]::before {
   column-gap: 0.625rem;
   font-size: 0.875rem;
 }
+@media (width <= 47.99875rem) {
+  .person {
+    flex-direction: column;
+    row-gap: 0.4375rem;
+  }
+}
 .person__img {
   --size: 3rem;
   width: var(--size);
@@ -1015,6 +1041,27 @@ button[aria-label]::before {
   align-items: center;
   column-gap: 0.5rem;
   font-weight: 600;
+}
+
+.listeners__header {
+  padding-top: 8.75rem;
+  padding-bottom: 6.25rem;
+  text-align: center;
+}
+
+.carusel__list {
+  display: flex;
+  column-gap: 1.25rem;
+  overflow: hidden;
+}
+.carusel__card {
+  padding: 2.5rem;
+}
+
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

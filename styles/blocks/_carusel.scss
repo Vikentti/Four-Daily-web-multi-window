@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.carusel {
+  &__list {
+    display: flex;
+    column-gap: rem(20);
+    overflow: hidden;
+  }
+
+  &__card {
+    padding: rem(40);
+  }
+}

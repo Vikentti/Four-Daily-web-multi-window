@@ -7,6 +7,7 @@
   align-items: center;
   row-gap: rem(110);
   padding-block: rem(140);
+  background-color: #fff;
 
   &__title {
     text-align: center;
@@ -49,16 +50,20 @@
       position: absolute;
       content: url(../../images/inspire/line.svg);
       left: rem(-65);
-      bottom: rem(50);
+      bottom: 20%;
       overflow: hidden;
     }
 
     &::before {
       position: absolute;
       content: url(../../images/inspire/Star.svg);
-      top: rem(-55);
       right: rem(-45);
+      top: -20%;
       overflow: hidden;
+
+      @include mobile {
+        right: rem(-95);
+      }
     }
 
     &-img {

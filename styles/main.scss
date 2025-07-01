@@ -12,9 +12,11 @@
 @use "blocks/slider";
 @use "blocks/inspired";
 @use "blocks/person";
+@use "blocks/listeners";
+@use "blocks/carusel";
 
-// .header,
-// .footer,
-// main > *:not(:last-of-type) {
-//   display: none !important;
-// }
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  display: none !important;
+}
