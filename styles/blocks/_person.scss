@@ -11,6 +11,12 @@
     row-gap: rem(7);
   }
 
+  &-alt {
+    @include mobile {
+      flex-direction: row;
+    }
+  }
+
   &__img {
     --size: #{rem(48)};
 

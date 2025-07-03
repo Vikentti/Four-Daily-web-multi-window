@@ -1030,6 +1030,11 @@ button[aria-label]::before {
     row-gap: 0.4375rem;
   }
 }
+@media (width <= 47.99875rem) {
+  .person-alt {
+    flex-direction: row;
+  }
+}
 .person__img {
   --size: 3rem;
   width: var(--size);
@@ -1043,19 +1048,95 @@ button[aria-label]::before {
   font-weight: 600;
 }
 
-.listeners__header {
+.carusel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.75rem;
+  overflow: hidden;
+}
+.carusel__list {
+  display: flex;
+  column-gap: 1.25rem;
+  transition-duration: var(--transition-duration);
+}
+.carusel__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 2.5rem;
+  width: 34.6875rem;
+  background-color: var(--color-light-second);
+  border-radius: 0.5rem;
+}
+@media (width <= 63.99875rem) {
+  .carusel__card {
+    width: 28.125rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .carusel__card {
+    width: 22.5rem;
+  }
+}
+.carusel__card-text {
+  font-size: clamp(1.125rem, 1.0089285714rem + 0.4761904762vw, 1.4375rem);
+}
+.carusel__buttons {
+  display: flex;
+  column-gap: 1.25rem;
+}
+.carusel__button {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  border-radius: 6.25rem;
+  border: 3.5px solid black;
+}
+.carusel__button-before::before {
+  --size: 0.875rem;
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  position: absolute;
+  content: "";
+  left: 42%;
+  transform: rotate(45deg);
+  border-left: 3.5px solid black;
+  border-bottom: 3.5px solid black;
+}
+.carusel__button-after::before {
+  --size: 0.875rem;
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  position: absolute;
+  content: "";
+  right: 42%;
+  transform: rotate(45deg);
+  border-right: 3.5px solid black;
+  border-top: 3.5px solid black;
+}
+.carusel__button:hover, .carusel__button-before:hover::before, .carusel__button-after:hover::before {
+  border-color: var(--color-accent);
+}
+
+.headline {
   padding-top: 8.75rem;
   padding-bottom: 6.25rem;
   text-align: center;
 }
-
-.carusel__list {
+.headline__inner {
   display: flex;
-  column-gap: 1.25rem;
-  overflow: hidden;
+  flex-direction: column;
+  row-gap: 1.25rem;
 }
-.carusel__card {
-  padding: 2.5rem;
+.headline__subtitle {
+  font-size: clamp(1rem, 0.8375rem + 0.6666666667vw, 1.4375rem);
 }
 
 .header,

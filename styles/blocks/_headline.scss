@@ -1,0 +1,17 @@
+@use "../helpers" as *;
+
+.headline {
+  padding-top: rem(140);
+  padding-bottom: rem(100);
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+  }
+
+  &__subtitle {
+    @include fluid-text(23, 16);
+  }
+}

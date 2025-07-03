@@ -620,19 +620,19 @@
         </div>
       </section>
       <section class="listeners bg-main" aria-labelledby="listeners__title">
-        <header class="listeners__header">
-          <div class="listeners__header-inner container">
-            <h2 class="listeners__title" id="listeners__title">
+        <header class="listeners__header headline">
+          <div class="headline__inner container">
+            <h2 class="headline__title" id="listeners__title">
               What our listeners say
             </h2>
-            <p class="listeners__subtitle gray-color">
+            <p class="headline__subtitle gray-color">
               Their experience throughout every platform
             </p>
           </div>
         </header>
-        <div class="listeners__body carusel container">
+        <div class="listeners__body carusel container" data-js-slider>
           <div class="carusel__body">
-            <ul class="carusel__list">
+            <ul class="carusel__list" data-js-slider-container>
               <li class="carusel__item">
                 <div class="carusel__card">
                   <img
@@ -646,7 +646,7 @@
                     Lorem ipsum dolor sit amet consectet piscing elit, sed do
                     eiusmod tempor incidi ut labore et dolore magna aliqua.
                   </p>
-                  <div class="inspired__person person">
+                  <div class="person person-alt">
                     <img
                       src="./images/liseners/avatar-1.png"
                       alt=""
@@ -681,7 +681,7 @@
                     Lorem ipsum dolor sit amet consectet piscing elit, sed do
                     eiusmod tempor incidi ut labore et dolore magna aliqua.
                   </p>
-                  <div class="inspired__person person">
+                  <div class="person person-alt">
                     <img
                       src="./images/liseners/avatar-2.png"
                       alt=""
@@ -716,7 +716,7 @@
                     Lorem ipsum dolor sit amet consectet piscing elit, sed do
                     eiusmod tempor incidi ut labore et dolore magna aliqua.
                   </p>
-                  <div class="inspired__person person">
+                  <div class="person person-alt">
                     <img
                       src="./images/liseners/avatar-3.png"
                       alt=""
@@ -741,8 +741,14 @@
             </ul>
           </div>
           <div class="carusel__buttons">
-            <button class="carusel__button-before"></button>
-            <button class="carusel__button-after"></button>
+            <button
+              class="carusel__button carusel__button-before"
+              data-js-slider-prev
+            ></button>
+            <button
+              class="carusel__button carusel__button-after"
+              data-js-slider-next
+            ></button>
           </div>
         </div>
       </section>

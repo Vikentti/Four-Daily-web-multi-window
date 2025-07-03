@@ -1,13 +1,86 @@
 @use "../helpers" as *;
 
 .carusel {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(60);
+  overflow: hidden;
+
   &__list {
     display: flex;
     column-gap: rem(20);
-    overflow: hidden;
+    transition-duration: var(--transition-duration);
   }
 
   &__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(32);
     padding: rem(40);
+    width: rem(555);
+    background-color: var(--color-light-second);
+    border-radius: rem(8);
+
+    @include tablet {
+      width: rem(450);
+    }
+
+    @include mobile-s {
+      width: rem(360);
+    }
+
+    &-text {
+      @include fluid-text(23, 18);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: rem(20);
+  }
+
+  &__button {
+    --size: #{rem(48)};
+    @include square(var(--size));
+
+    position: relative;
+    border-radius: rem(100);
+    border: 3.5px solid black;
+
+    &-before {
+      &::before {
+        --size: #{rem(14)};
+        @include square(var(--size));
+        @include abs-y;
+
+        position: absolute;
+        content: "";
+        left: 42%;
+        transform: rotate(45deg);
+        border-left: 3.5px solid black;
+        border-bottom: 3.5px solid black;
+      }
+    }
+
+    &-after {
+      &::before {
+        --size: #{rem(14)};
+        @include square(var(--size));
+        @include abs-y;
+
+        position: absolute;
+        content: "";
+        right: 42%;
+        transform: rotate(45deg);
+        border-right: 3.5px solid black;
+        border-top: 3.5px solid black;
+      }
+    }
+
+    &:hover,
+    &-before:hover::before,
+    &-after:hover::before {
+      border-color: var(--color-accent);
+    }
   }
 }
