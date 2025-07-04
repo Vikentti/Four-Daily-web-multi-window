@@ -1,1 +1,37 @@
 @use "../helpers" as *;
+
+.listeners {
+  position: relative;
+  padding-bottom: rem(100);
+
+  &__inner {
+    position: relative;
+
+    &::before {
+      --size: #{rem(105)};
+      @include square(var(--size));
+
+      position: absolute;
+      content: "";
+      background-image: url(../../images/liseners/Sparkle.svg);
+      background-size: cover;
+      left: 13%;
+      top: -55%;
+
+      @include laptop {
+        --size: #{rem(95)};
+        left: 14%;
+        top: -55%;
+      }
+
+      @include tablet {
+        --size: #{rem(80)};
+        left: 11%;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

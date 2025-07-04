@@ -16,8 +16,16 @@
 @use "blocks/carusel";
 @use "blocks/headline";
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
-}
+// .header,
+// .footer,
+// main > *:not(:last-of-type) {
+//   display: none !important;
+// }
+
+// .footer,
+// .header,
+// .hero,
+// .listeners,
+// .benefits {
+//   display: none !important;
+// }

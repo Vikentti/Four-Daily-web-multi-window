@@ -5,6 +5,11 @@
   padding-bottom: rem(100);
   text-align: center;
 
+  @include tablet {
+    padding-top: rem(130);
+    padding-bottom: rem(90);
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;

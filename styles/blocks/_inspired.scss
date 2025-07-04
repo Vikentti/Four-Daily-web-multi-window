@@ -2,12 +2,24 @@
 
 .inspired {
   position: relative;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  row-gap: rem(110);
   padding-block: rem(140);
-  background-color: #fff;
+
+  @include tablet {
+    padding-block: rem(100);
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(110);
+    overflow: hidden;
+
+    @include tablet {
+      row-gap: rem(80);
+    }
+  }
 
   &__title {
     text-align: center;
@@ -51,19 +63,14 @@
       content: url(../../images/inspire/line.svg);
       left: rem(-65);
       bottom: 20%;
-      overflow: hidden;
     }
 
     &::before {
       position: absolute;
       content: url(../../images/inspire/Star.svg);
-      right: rem(-45);
+      right: -5%;
       top: -20%;
-      overflow: hidden;
-
-      @include mobile {
-        right: rem(-95);
-      }
+      // overflow: hidden;
     }
 
     &-img {
