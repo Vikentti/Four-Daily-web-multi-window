@@ -15,17 +15,10 @@
 @use "blocks/listeners";
 @use "blocks/carusel";
 @use "blocks/headline";
+@use "blocks/benefits";
 
-// .header,
-// .footer,
-// main > *:not(:last-of-type) {
-//   display: none !important;
-// }
-
-// .footer,
-// .header,
-// .hero,
-// .listeners,
-// .benefits {
-//   display: none !important;
-// }
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  display: none !important;
+}

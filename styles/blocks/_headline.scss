@@ -3,6 +3,8 @@
 .headline {
   padding-top: rem(140);
   padding-bottom: rem(100);
+  max-width: rem(710);
+  margin: 0 auto;
   text-align: center;
 
   @include tablet {

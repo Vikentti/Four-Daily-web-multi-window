@@ -1,0 +1,35 @@
+@use "../helpers" as *;
+
+.benefits {
+  &__header {
+    &-inner {
+      position: relative;
+      &::before {
+        --size: #{rem(240)};
+        @include square(var(--size));
+
+        position: absolute;
+        content: "";
+        background-image: url(../../images/benefits/svg.svg);
+        background-size: cover;
+        top: -90%;
+        left: 77%;
+
+        @media (width <= 1) {
+        }
+
+        @include tablet {
+          --size: #{rem(180)};
+
+          //   top: -80%;
+          //   right: 15%;
+        }
+
+        @include mobile-s {
+          top: -60%;
+          left: 56%;
+        }
+      }
+    }
+  }
+}

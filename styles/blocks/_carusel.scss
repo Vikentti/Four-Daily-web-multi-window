@@ -10,6 +10,10 @@
     display: flex;
     column-gap: rem(20);
     transition-duration: var(--transition-duration);
+
+    @include mobile {
+      column-gap: rem(8);
+    }
   }
 
   &__card {
