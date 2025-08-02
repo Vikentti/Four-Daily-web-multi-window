@@ -31,6 +31,7 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: rem(216);
       text-align: center;
+      margin-inline: rem(10);
 
       @include mobile {
         grid-template-columns: 1fr;
@@ -55,7 +56,7 @@
     align-items: center;
     row-gap: rem(40);
     padding-block: rem(40);
-    width: 100%;
+    width: 98%;
     background-color: var(--color-light-second);
 
     &::after {
@@ -68,9 +69,10 @@
     &::before {
       position: absolute;
       content: url(../../images/inspire/Star.svg);
-      right: -5%;
-      top: -20%;
-      // overflow: hidden;
+
+      top: 0;
+      left: 100%;
+      transform: translate(-85%, -55%);
     }
 
     &-img {

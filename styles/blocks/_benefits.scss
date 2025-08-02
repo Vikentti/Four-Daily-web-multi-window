@@ -1,6 +1,7 @@
 @use "../helpers" as *;
 
 .benefits {
+  position: relative;
   &__header {
     &-inner {
       position: relative;
@@ -12,24 +13,75 @@
         content: "";
         background-image: url(../../images/benefits/svg.svg);
         background-size: cover;
-        top: -90%;
-        left: 77%;
+        top: 0;
+        left: 100%;
+        transform: translate(-70%, -55%);
 
-        @media (width <= 1) {
+        @media (width <= 1200px) {
+          transform: translate(-80%, -55%);
         }
 
         @include tablet {
-          --size: #{rem(180)};
-
-          //   top: -80%;
-          //   right: 15%;
+          transform: translate(-85%, -55%);
         }
 
-        @include mobile-s {
-          top: -60%;
-          left: 56%;
+        @media (width <= 610px) {
+          --size: #{rem(170)};
+
+          transform: translate(-80%, -50%);
+        }
+
+        @media (width <= 505px) {
+          transform: translate(-90%, -55%);
         }
       }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(100);
+    padding-bottom: rem(140);
+  }
+
+  &__card {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: rem(80) rem(20);
+
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      row-gap: rem(10);
+      text-align: center;
+
+      @include mobile {
+        max-width: 80%;
+        margin-inline: auto;
+      }
+
+      @include mobile-s {
+        max-width: 100%;
+      }
+    }
+
+    &-img {
+      margin-bottom: rem(20);
+      width: rem(78);
+      height: rem(78);
     }
   }
 }
