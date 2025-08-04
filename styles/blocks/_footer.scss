@@ -60,10 +60,12 @@
 
     &-data {
       font-size: rem(12);
+      color: var(--color-gray);
     }
 
     &-text {
       font-size: rem(14);
+      color: var(--color-gray);
     }
 
     &-links {
@@ -124,6 +126,7 @@
 
     &-title {
       max-width: rem(324);
+      color: var(--color-gray);
     }
 
     &-list {
@@ -138,6 +141,10 @@
     display: flex;
     flex-direction: column;
     row-gap: rem(20);
+
+    &-text {
+      color: var(--color-gray);
+    }
 
     &-list {
       display: flex;
@@ -166,11 +173,16 @@
       background-color: var(--color-dark);
     }
 
+    &-text {
+      color: var(--color-gray);
+    }
+
     &-list {
       position: relative;
       display: flex;
       align-items: center;
       column-gap: rem(24);
+      color: var(--color-gray);
 
       &::after {
         @include square(rem(2));

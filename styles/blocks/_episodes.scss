@@ -1,0 +1,58 @@
+@use "../helpers" as *;
+
+.episodes {
+  position: relative;
+  padding-bottom: rem(140);
+  overflow: hidden;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: rem(100);
+  }
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+
+    &::before {
+      --size: #{rem(240)};
+      @include square(var(--size));
+
+      position: absolute;
+      content: "";
+      background-image: url(../../images/episodes/svg.svg);
+      background-size: cover;
+      top: 0;
+      left: 100%;
+      transform: translate(-40%, -65%);
+
+      @include tablet {
+        transform: translate(-45%, -65%);
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    border-radius: rem(18);
+    border: 2px solid #000;
+    background-color: #fff;
+
+    @include hover {
+      box-shadow: 10px 10px 0 0 #81adc8;
+      background-color: var(--color-light-second);
+    }
+  }
+}

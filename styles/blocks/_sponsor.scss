@@ -1,0 +1,16 @@
+@use "../helpers" as *;
+
+.sponsor {
+  position: relative;
+  padding-bottom: rem(140);
+
+  &__body {
+    overflow: hidden;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(20);
+  }
+}

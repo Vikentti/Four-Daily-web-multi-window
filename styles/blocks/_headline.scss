@@ -20,5 +20,6 @@
 
   &__subtitle {
     @include fluid-text(23, 16);
+    color: var(--color-gray);
   }
 }

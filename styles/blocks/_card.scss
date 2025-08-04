@@ -1,0 +1,122 @@
+@use "../helpers" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+  padding: rem(16);
+
+  @include tablet {
+    padding: rem(12);
+  }
+
+  @include mobile {
+    padding: rem(8);
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: rem(166) 1fr;
+    gap: rem(20);
+
+    @include mobile-s {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: rem(10);
+    }
+
+    &-img {
+      border-radius: rem(8);
+
+      @include mobile-s {
+        width: 100%;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: rem(15);
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(4);
+      width: 100%;
+      font-weight: 700;
+
+      &--main {
+        line-height: 140%;
+        letter-spacing: -0.02em;
+      }
+    }
+
+    &-text {
+      padding-top: rem(10);
+      color: var(--color-gray);
+      border-top: 1px solid var(--color-gray);
+      font-size: rem(14);
+    }
+  }
+
+  &__topic {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(12);
+
+    @include mobile-s {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: rem(10);
+    }
+
+    &-list {
+      display: flex;
+      column-gap: rem(6);
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-link {
+      padding: rem(6) rem(12);
+      color: var(--color-gray);
+      border: 1px solid var(--color-gray);
+      border-radius: rem(6);
+
+      @include hover {
+        border: 1px solid var(--color-accent);
+      }
+    }
+
+    &-aditions {
+      display: flex;
+      align-items: center;
+      column-gap: rem(10);
+      color: var(--color-gray);
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-small {
+      border-radius: rem(999);
+    }
+
+    &-2 {
+      box-sizing: content-box;
+      z-index: 500;
+      border: 3px solid #fff;
+      transform: translate(-20%);
+    }
+  }
+}

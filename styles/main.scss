@@ -1,8 +1,8 @@
 @use "normalize";
 @use "fonts";
 @use "variables";
-@use "utils";
 @use "globals";
+@use "utils";
 @use "blocks/header";
 @use "blocks/buttons";
 @use "blocks/burger-button";
@@ -16,9 +16,12 @@
 @use "blocks/carusel";
 @use "blocks/headline";
 @use "blocks/benefits";
+@use "blocks/episodes";
+@use "blocks/card";
+@use "blocks/sponsor";
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
-}
+// .header,
+// .footer,
+// main > *:not(:last-of-type) {
+//   display: none !important;
+// }

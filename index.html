@@ -547,6 +547,7 @@
           </ul>
         </div>
       </section>
+
       <section class="inspired black-zig" aria-label="inspired__title">
         <div class="inspired__inner">
           <h2 class="inspired__title" id="inspired__title">
@@ -618,6 +619,7 @@
           </div>
         </div>
       </section>
+
       <section
         class="listeners bg-main black-zig"
         aria-labelledby="listeners__title"
@@ -627,7 +629,7 @@
             <h3 class="headline__title h2" id="listeners__title">
               What our listeners say
             </h3>
-            <p class="headline__subtitle gray-color">
+            <p class="headline__subtitle">
               Their experience throughout every platform
             </p>
           </div>
@@ -754,8 +756,9 @@
           </div>
         </div>
       </section>
+
       <section class="benefits black-zig" aria-label="benefits__title">
-        <header class="benefits__header benefits__header headline">
+        <header class="benefits__header headline">
           <div class="headline__inner benefits__header-inner container">
             <h4
               class="headline__title benefits__header-title h2"
@@ -763,7 +766,7 @@
             >
               Membership benefits
             </h4>
-            <p class="headline__subtitle gray-color">
+            <p class="headline__subtitle">
               Become our sponsor and get all benefits
             </p>
           </div>
@@ -859,30 +862,42 @@
         </div>
       </section>
 
-      <section class="episodes black-zig" aria-label="episodes__title">
-        <header class="episodes__header benefits__header headline">
+      <section
+        class="episodes black-zig bg-second"
+        aria-label="episodes__title"
+      >
+        <header class="episodes__header headline">
           <div class="headline__inner episodes__header-inner container">
             <h5
               class="headline__title episodes__header-title h2"
               id="episodes__title"
             >
-              Membership benefits
+              Recent Episodes
             </h5>
-            <p class="headline__subtitle gray-color">
-              Become our sponsor and get all benefits
+            <p class="headline__subtitle">
+              Available on your favorite platform
             </p>
           </div>
         </header>
 
-        <div class="episodes__body">
+        <div class="episodes__body container">
           <ul class="episodes__list">
             <li class="episodes__item">
               <div class="episodes__card card">
-                <a class="card__body">
-                  <img src="./images/episodes/1.png" loading="lazy" />
+                <a class="card__body" href="">
+                  <img
+                    class="card__body-img"
+                    src="./images/episodes/1.png"
+                    width="166"
+                    height="166"
+                    loading="lazy"
+                  />
                   <div class="card__info">
-                    <p class="card__info-title">
-                      Eps. 6 <span class="h4">Pandemic Becoming Endemic</span>
+                    <p class="card__info-title accent-color">
+                      Eps. 6
+                      <span class="card__info-title--main accent-color h4"
+                        >Pandemic Becoming Endemic</span
+                      >
                     </p>
                     <p class="card__info-text">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -890,31 +905,446 @@
                     </p>
                   </div>
                 </a>
-                <div class="card__dops">
+                <div class="card__topic">
                   <ul class="card__topic-list">
-                    <li class="card__topic-item">covid-19</li>
-                    <li class="card__topic-item">health</li>
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">covid-19</a>
+                    </li>
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">health</a>
+                    </li>
                   </ul>
-                  <div class="card__hosts">
-                    <p class="card__hosts-text">Hosted by:</p>
-                    <div class="card__hosts-images">
-                      <img
-                        src="./images/episodes/avatar-1.png"
-                        loading="lazy"
-                      />
-                      <img
-                        src="./images/episodes/avatar-2.png"
-                        loading="lazy"
-                      />
+                  <div class="card__topic-aditions">
+                    <p class="card__topic-text">Hosted by:</p>
+                    <div class="card__img">
+                      <div class="card__img-container">
+                        <img
+                          class="card__img-1 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar1.jpg"
+                          loading="lazy"
+                        />
+                        <img
+                          class="card__img-2 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar2.png"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="episodes__item">
+              <div class="episodes__card card">
+                <a class="card__body" href="">
+                  <img
+                    class="card__body-img"
+                    src="./images/episodes/2.png"
+                    width="166"
+                    height="166"
+                    loading="lazy"
+                  />
+                  <div class="card__info">
+                    <p class="card__info-title accent-color">
+                      Eps. 5 <br />
+                      <span class="card__info-title--main h4"
+                        >Tesla Autopilot Controversy</span
+                      >
+                    </p>
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </a>
+                <div class="card__topic">
+                  <ul class="card__topic-list">
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">automation</a>
+                    </li>
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">tech</a>
+                    </li>
+                  </ul>
+                  <div class="card__topic-aditions">
+                    <p class="card__topic-text">Hosted by:</p>
+                    <div class="card__img">
+                      <div class="card__img-container">
+                        <img
+                          class="card__img-1 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar1.jpg"
+                          loading="lazy"
+                        />
+                        <img
+                          class="card__img-2 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar2.png"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="episodes__item">
+              <div class="episodes__card card">
+                <a class="card__body" href="">
+                  <img
+                    class="card__body-img"
+                    src="./images/episodes/3.png"
+                    width="166"
+                    height="166"
+                    loading="lazy"
+                  />
+                  <div class="card__info">
+                    <p class="card__info-title accent-color">
+                      Eps. 4 <br />
+                      <span class="card__info-title--main h4"
+                        >Women's Rights? Is it alright?</span
+                      >
+                    </p>
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </a>
+                <div class="card__topic">
+                  <ul class="card__topic-list">
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">women’s rights</a>
+                    </li>
+                  </ul>
+                  <div class="card__topic-aditions">
+                    <p class="card__topic-text">Hosted by:</p>
+                    <div class="card__img">
+                      <div class="card__img-container">
+                        <img
+                          class="card__img-1 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar1.jpg"
+                          loading="lazy"
+                        />
+                        <img
+                          class="card__img-2 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar2.png"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="episodes__item">
+              <div class="episodes__card card">
+                <a class="card__body" href="">
+                  <img
+                    class="card__body-img"
+                    src="./images/episodes/4.png"
+                    width="166"
+                    height="166"
+                    loading="lazy"
+                  />
+                  <div class="card__info">
+                    <p class="card__info-title accent-color">
+                      Eps. 3 <br />
+                      <span class="card__info-title--main accent-color h4"
+                        >How to Deal with Self–Confidence</span
+                      >
+                    </p>
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </a>
+                <div class="card__topic">
+                  <ul class="card__topic-list">
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">self-esteem</a>
+                    </li>
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">health</a>
+                    </li>
+                  </ul>
+                  <div class="card__topic-aditions">
+                    <p class="card__topic-text">Hosted by:</p>
+                    <div class="card__img">
+                      <div class="card__img-container">
+                        <img
+                          class="card__img-1 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar1.jpg"
+                          loading="lazy"
+                        />
+                        <img
+                          class="card__img-2 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar2.png"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="episodes__item">
+              <div class="episodes__card card">
+                <a class="card__body" href="">
+                  <img
+                    class="card__body-img"
+                    src="./images/episodes/5.png"
+                    width="166"
+                    height="166"
+                    loading="lazy"
+                  />
+                  <div class="card__info">
+                    <p class="card__info-title accent-color">
+                      Eps. 2 <br />
+                      <span class="card__info-title--main accent-color h4"
+                        >Type of Social Classes of People</span
+                      >
+                    </p>
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </a>
+                <div class="card__topic">
+                  <ul class="card__topic-list">
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">social class</a>
+                    </li>
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">wealth</a>
+                    </li>
+                  </ul>
+                  <div class="card__topic-aditions">
+                    <p class="card__topic-text">Hosted by:</p>
+                    <div class="card__img">
+                      <div class="card__img-container">
+                        <img
+                          class="card__img-1 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar1.jpg"
+                          loading="lazy"
+                        />
+                        <img
+                          class="card__img-2 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar2.png"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="episodes__item">
+              <div class="episodes__card card">
+                <a class="card__body" href="">
+                  <img
+                    class="card__body-img"
+                    src="./images/episodes/6.png"
+                    width="166"
+                    height="166"
+                    loading="lazy"
+                  />
+                  <div class="card__info">
+                    <p class="card__info-title accent-color">
+                      Eps. 1 <br />
+                      <span class="card__info-title--main h4"
+                        >Are you a Perplexed Mind Person?</span
+                      >
+                    </p>
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Curabitur ac ultrices odio.
+                    </p>
+                  </div>
+                </a>
+                <div class="card__topic">
+                  <ul class="card__topic-list">
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">mind-behaviour</a>
+                    </li>
+                    <li class="card__topic-item">
+                      <a href="" class="card__topic-link">health</a>
+                    </li>
+                  </ul>
+                  <div class="card__topic-aditions">
+                    <p class="card__topic-text">Hosted by:</p>
+                    <div class="card__img">
+                      <div class="card__img-container">
+                        <img
+                          class="card__img-1 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar1.jpg"
+                          loading="lazy"
+                        />
+                        <img
+                          class="card__img-2 card__img-small"
+                          width="26"
+                          height="26"
+                          src="./images/episodes/avatar2.png"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
           </ul>
-          <a class="benefits__button button button--dark">
+          <a class="episodes__button button button--dark">
             BROWSE ALL EPISODES
           </a>
+        </div>
+      </section>
+      <section class="sponsor black-zig" aria-label="sponsor__title">
+        <header class="sponsor__header headline">
+          <div class="headline__inner sponsor__header-inner container">
+            <h6
+              class="headline__title sponsor__header-title h2"
+              id="sponsor__title"
+            >
+              Become our sponsor
+            </h6>
+            <p class="headline__subtitle">
+              Get exclusive episodes, merch and more
+            </p>
+          </div>
+        </header>
+        <div class="sponsor__body">
+          <ul class="sponsor__list container">
+            <li class="sponsor__item">
+              <div class="sponsor__version">
+                <div class="sponsor__version-textarea">
+                  <p class="h3">Member</p>
+                  <p class="sponsor__version-text">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+                <div class="sponsor__version-actions">
+                  <a href="" class="sponsor__version-button button button--dark"
+                    >SUBSCRIBE</a
+                  >
+                  <p class="sponsor__version-price accent-color h4">
+                    $9.99 <br />
+                    <span class="sponsor__version-month gray-color"
+                      >/month</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="sponsor__value">
+                <p class="sponsor__value-title">What’s included:</p>
+                <ul class="sponsor__value-list">
+                  <li class="sponsor__value-item">• Exclusive Content</li>
+                  <li class="sponsor__value-item">• 5% Discount on Merch</li>
+                  <li class="sponsor__value-item">• Join the Community</li>
+                  <li class="sponsor__value-item">• Livestreaming Access</li>
+                </ul>
+              </div>
+            </li>
+            <li class="sponsor__item">
+              <div class="sponsor__version">
+                <div class="sponsor__version-textarea">
+                  <p class="h3">
+                    Family
+                    <span class="sponsor__version-popular">MOST POPULAR</span>
+                  </p>
+                  <p class="sponsor__version-text">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+                <div class="sponsor__version-actions">
+                  <a href="" class="sponsor__version-button button button--dark"
+                    >SUBSCRIBE</a
+                  >
+                  <p class="sponsor__version-price accent-color h4">
+                    $14.99 <br />
+                    <span class="sponsor__version-month gray-color"
+                      >/month</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="sponsor__value">
+                <p class="sponsor__value-title">What’s included:</p>
+                <ul class="sponsor__value-list">
+                  <li class="sponsor__value-item sponsor__value-item--thick">
+                    • Everything in Tier 1
+                  </li>
+                  <li class="sponsor__value-item">• Free tickets to Events</li>
+                  <li class="sponsor__value-item">• Limited Edition Merch</li>
+                  <li class="sponsor__value-item">• Promote your Product</li>
+                  <li class="sponsor__value-item">• Request Topic</li>
+                </ul>
+              </div>
+            </li>
+            <li class="sponsor__item">
+              <div class="sponsor__version">
+                <div class="sponsor__version-textarea">
+                  <p class="h3">Official</p>
+                  <p class="sponsor__version-text">
+                    Lorem ipsum dolor sit amet consectet cing elit, sed do
+                    eiusmod tempor.
+                  </p>
+                </div>
+                <div class="sponsor__version-actions">
+                  <a href="" class="sponsor__version-button button button--dark"
+                    >SUBSCRIBE</a
+                  >
+                  <p class="sponsor__version-price accent-color h4">
+                    $29.99 <br />
+                    <span class="sponsor__version-month gray-color"
+                      >/month</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="sponsor__value">
+                <p class="sponsor__value-title">What’s included:</p>
+                <ul class="sponsor__value-list">
+                  <li class="sponsor__value-item sponsor__value-item--thick">
+                    • Everything in Tier 2
+                  </li>
+                  <li class="sponsor__value-item">
+                    • Exclusive Badge on Livestreaming
+                  </li>
+                  <li class="sponsor__value-item">
+                    • Become an Official Sponsor
+                  </li>
+                  <li class="sponsor__value-item">
+                    • Early Access to All Episodes
+                  </li>
+                  <li class="sponsor__value-item">• Free Stikers and Merch</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
