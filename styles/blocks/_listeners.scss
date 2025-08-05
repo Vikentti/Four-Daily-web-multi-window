@@ -5,33 +5,45 @@
   padding-bottom: rem(100);
 
   &__header {
+    position: relative;
     &-inner {
-      position: relative;
-
       &::before {
         --size: #{rem(105)};
+        --pos-x: -65%;
+        --pos-y: 64%;
         @include square(var(--size));
 
         position: absolute;
         content: "";
         background-image: url(../../images/liseners/Sparkle.svg);
         background-size: cover;
-        left: 13%;
-        top: -55%;
 
-        @include laptop {
-          --size: #{rem(95)};
-          left: 14%;
-          top: -55%;
+        top: 0;
+        left: 0;
+        transform: translate(var(--pos-x), var(--pos-y));
+
+        @media (width <= 1276px) {
+          --pos-x: -70%;
+          --pos-y: 55%;
         }
-
-        @include tablet {
-          --size: #{rem(80)};
-          left: 11%;
+        @media (width <= 1080px) {
+          --pos-x: -50%;
+          --pos-y: 60%;
         }
-
-        @include mobile {
-          display: none;
+        @media (width <= 890px) {
+          --pos-x: -25%;
+          --pos-y: 50%;
+        }
+        @media (width <= 649px) {
+          --size: #{rem(85)};
+          --pos-x: 0;
+          --pos-y: 65%;
+        }
+        @media (width <= 529px) {
+          --pos-x: -35%;
+        }
+        @media (width <= 418px) {
+          --pos-x: 10%;
         }
       }
     }

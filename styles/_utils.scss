@@ -31,23 +31,49 @@
 }
 
 .red-zig {
-  &::after {
-    @include abs-x;
+  &--bottom {
+    &::before {
+      @include abs-x;
 
-    content: url(../../icons/red_zig-zag.svg);
-    bottom: rem(-86);
-    z-index: 100;
+      content: url(../../icons/red_zig-zag.svg);
+      bottom: rem(-86);
+      z-index: 2;
+    }
+  }
+
+  &--top {
+    &::after {
+      @include abs-x;
+
+      content: url(../../icons/red_zig-zag.svg);
+      top: rem(-75);
+      z-index: 2;
+    }
   }
 }
 
 .black-zig {
-  &::after {
-    @include abs-x;
+  &--bottom {
+    &::before {
+      @include abs-x;
 
-    content: url(../../icons/black-zig.svg);
-    bottom: rem(-86);
-    z-index: 100;
-    overflow: visible;
+      content: url(../../icons/black-zig.svg);
+      bottom: rem(-86);
+
+      z-index: 2;
+      overflow: visible;
+    }
+  }
+
+  &--top {
+    &::after {
+      @include abs-x;
+
+      content: url(../../icons/black-zig.svg);
+      top: rem(-75);
+
+      z-index: 2;
+    }
   }
 }
 

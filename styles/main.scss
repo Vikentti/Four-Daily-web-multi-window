@@ -20,8 +20,8 @@
 @use "blocks/card";
 @use "blocks/sponsor";
 
-// .header,
-// .footer,
-// main > *:not(:last-of-type) {
-//   display: none !important;
-// }
+.header,
+.footer,
+main > *:not(:last-of-type) {
+  // display: none !important;
+}

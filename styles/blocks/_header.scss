@@ -50,6 +50,7 @@
       padding: 1rem;
       background-color: var(--color-light-second);
       transition-duration: var(--transition-duration);
+      z-index: 3;
 
       &:not(.is-active) {
         @include hide;

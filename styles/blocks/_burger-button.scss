@@ -9,6 +9,7 @@
   padding: rem(8.5) rem(4.25);
   border: none;
   background-color: var(--color-light-second);
+  z-index: 4;
 
   @include hover {
     color: var(--color-accent);
