@@ -19,9 +19,10 @@
 @use "blocks/episodes";
 @use "blocks/card";
 @use "blocks/sponsor";
+@use "blocks/news";
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  // display: none !important;
-}
+// .header,
+// .footer,
+// main > *:not(:last-of-type) {
+//   display: none !important;
+// }

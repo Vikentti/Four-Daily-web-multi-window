@@ -60,6 +60,7 @@
   }
 
   &__list {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: rem(20);
@@ -71,6 +72,44 @@
     @media (width < 1160px) {
       grid-template-columns: 1fr;
       row-gap: rem(30);
+    }
+
+    &::after {
+      --size: #{rem(200)};
+      @include square(var(--size));
+
+      position: absolute;
+      content: "";
+      background-image: url(../../images/sponsore/Star.svg);
+      background-size: cover;
+      top: 0;
+      left: 100%;
+      transform: translate(-58%, -46%);
+      z-index: -10;
+
+      @media (width < 1160px) {
+        left: 50%;
+        transform: translate(40%, -46%);
+      }
+    }
+
+    &::before {
+      --size: #{rem(120)};
+      @include square(var(--size));
+
+      position: absolute;
+      content: "";
+      background-image: url(../../images/sponsore/Vector.svg);
+      background-size: cover;
+      bottom: 0;
+      right: 100%;
+      transform: translate(55%, 35%);
+      z-index: -10;
+
+      @media (width < 1160px) {
+        right: 50%;
+        transform: translate(-113%, 31%);
+      }
     }
   }
 
@@ -96,11 +135,12 @@
     min-height: rem(357);
     border: 2px solid black;
     border-radius: rem(8);
+    background-color: #fff;
 
     @include mobile-s {
-      padding: rem(10) rem(15);
-      max-width: rem(330);
-      min-height: rem(300);
+      padding: rem(15) rem(20);
+      max-width: rem(340);
+      min-height: rem(310);
     }
 
     &-accent {
@@ -165,12 +205,13 @@
     min-height: rem(312);
     border: 2px solid black;
     border-radius: rem(8);
+    background-color: #fff;
 
     @include mobile-s {
       row-gap: rem(20);
-      padding: rem(10);
-      max-width: rem(330);
-      min-height: rem(300);
+      padding: rem(20);
+      max-width: rem(340);
+      min-height: rem(310);
     }
 
     &-accent {
