@@ -51,6 +51,7 @@
     background-color: #fff;
 
     @include hover {
+      transition-duration: var(--transition-duration);
       box-shadow: 10px 10px 0 0 #81adc8;
       background-color: var(--color-light-second);
     }

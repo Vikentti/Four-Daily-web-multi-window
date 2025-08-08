@@ -13,11 +13,19 @@
   &--dark {
     background-color: var(--color-dark);
     color: var(--color-light-main);
+
+    @include hover {
+      box-shadow: 10px 10px 0 0 #81adc8;
+    }
   }
 
   &--light {
     background-color: transparent;
     color: var(--color-dark);
+
+    @include hover {
+      box-shadow: 10px 10px 0 0 #81adc8;
+    }
   }
 
   &--big {

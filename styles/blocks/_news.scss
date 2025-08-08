@@ -3,6 +3,8 @@
 .news {
   position: relative;
   padding-bottom: rem(140);
+
+  background-color: var(--color-light-main);
   &__body {
     display: flex;
     flex-direction: column;

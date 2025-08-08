@@ -1,0 +1,127 @@
+@use "../helpers" as *;
+
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(140);
+  align-items: center;
+  background-color: var(--color-light-main);
+
+  @include tablet {
+    row-gap: rem(100);
+  }
+
+  @include mobile {
+    row-gap: rem(60);
+  }
+
+  @include mobile-s {
+    row-gap: rem(30);
+  }
+
+  &__header {
+    background-color: var(--color-light-main);
+    border-radius: rem(50);
+    z-index: 3;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(24);
+    z-index: 3;
+  }
+
+  &__dops {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(10);
+    color: var(--color-gray);
+    text-align: center;
+    font-size: rem(14);
+    line-height: 160%;
+  }
+
+  &__images {
+    display: flex;
+    column-gap: rem(20);
+    margin: 0 auto;
+
+    &-img {
+      --size: #{rem(24)};
+      @include square(var(--size));
+    }
+  }
+
+  &__bg {
+    &-1 {
+      position: absolute;
+      bottom: 0;
+      right: 110%;
+      transform: translate(98%, 0%);
+      z-index: 1;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-2 {
+      position: absolute;
+      bottom: 0;
+      left: 110%;
+      transform: translate(-98%, 0%);
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-sparkle {
+      --size: #{rem(140)};
+      @include square(var(--size));
+
+      position: absolute;
+      z-index: 3;
+
+      @include mobile {
+        display: none;
+      }
+
+      &--1 {
+        bottom: 31%;
+        right: 110%;
+        transform: translate(90%, 0%);
+      }
+
+      &--2 {
+        --size: #{rem(64)};
+
+        bottom: 49%;
+        right: 100%;
+        transform: translate(72%, 130%);
+      }
+
+      &--3 {
+        --size: #{rem(26)};
+
+        bottom: 48%;
+        right: 100%;
+        transform: translate(-30%, 70%);
+      }
+    }
+
+    &-vector {
+      position: absolute;
+      bottom: 0;
+      left: 80%;
+      transform: translate(15%, 0%);
+      z-index: -1;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
