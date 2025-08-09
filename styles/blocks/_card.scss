@@ -16,7 +16,7 @@
 
   &__body {
     display: grid;
-    grid-template-columns: rem(166) 1fr;
+    grid-template-columns: auto 1fr;
     gap: rem(20);
 
     @include mobile-s {

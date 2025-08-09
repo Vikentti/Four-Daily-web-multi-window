@@ -1,0 +1,130 @@
+@use "../helpers" as *;
+
+.heroAlt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(80);
+  padding-top: rem(100);
+  background-color: var(--color-light-second);
+
+  &__main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: rem(118);
+  }
+
+  &__imges {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(25.31);
+    width: rem(472);
+    height: rem(472);
+    background-image: url(../../images/heroAlt/1.png);
+    background-size: cover;
+    border-radius: rem(8);
+    box-shadow: 12px 12px 0 0 var(--color-blue);
+
+    &-text {
+      color: var(--color-blue);
+      font-size: rem(46);
+      font-weight: 700;
+      letter-spacing: -0.08em;
+      line-height: 140%;
+    }
+  }
+
+  &__sos1al {
+    display: flex;
+    justify-content: end;
+    column-gap: rem(12.65);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(60);
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(40);
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(23);
+    }
+
+    &-head {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(16);
+    }
+
+    &-subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+    }
+
+    &-span {
+      padding: rem(3) rem(6);
+      border: 1px solid var(--color-accent);
+      border-radius: rem(4);
+      font-size: rem(12);
+    }
+
+    &-textarea {
+      padding-top: rem(20);
+      border-top: 1px solid black;
+      color: var(--color-gray);
+    }
+
+    &-text {
+      width: 103%;
+    }
+  }
+
+  &__publisher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: rem(14);
+    color: var(--color-gray);
+
+    &-body {
+      display: flex;
+      align-items: center;
+      column-gap: rem(10);
+    }
+
+    &-img {
+      border-radius: rem(999);
+    }
+
+    &-name {
+      font-weight: 700;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: start;
+    column-gap: rem(20);
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    &-play {
+      padding-right: rem(10);
+    }
+  }
+}

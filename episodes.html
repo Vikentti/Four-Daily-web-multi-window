@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Episodes</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__body container">
+        <a href="#" class="header__logo logo">
+          <img
+            src="./images/Head/header_logo.svg"
+            class="logo__img"
+            aria-label="Home"
+            title="Home"
+            height="74"
+            width="74"
+          />
+        </a>
+
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link header__menu-link--active"
+                  >Episodes</a
+                >
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">More</a>
+              </li>
+            </ul>
+
+            <ul class="header__button-list">
+              <li class="header__button-item">
+                <a
+                  href="#"
+                  class="header__button-link button button--light button--small"
+                  >RECENT EPISODES</a
+                >
+              </li>
+              <li class="header__button-item">
+                <a
+                  href="#"
+                  class="header__button-link button button--dark button--small"
+                  >SUBSCRIBE</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <section class="heroAlt" aria-label="heroALt-title">
+      <div class="heroAlt__main container">
+        <div class="heroAlt__imges">
+          <div class="heroAlt__sos1al">
+            <a href="" class="heroAlt__sos1al-link">
+              <img
+                src="./icons/google podcast.svg"
+                alt=""
+                class="heroAlt_sos1al-img"
+                width="30.37"
+                height="30.37"
+              />
+            </a>
+            <a href="" class="heroAlt__sos1al-link">
+              <img
+                src="./icons/spotify.svg"
+                alt=""
+                class="heroAlt_sos1al-img"
+                width="30.37"
+                height="30.37"
+              />
+            </a>
+            <a href="" class="heroAlt__sos1al-link">
+              <img
+                src="./icons/youtube.svg"
+                alt=""
+                class="heroAlt_sos1al-img"
+                width="30.37"
+                height="30.37"
+              />
+            </a>
+          </div>
+          <p class="heroAlt__imges-text">Perplexed Mind</p>
+        </div>
+        <div class="heroAlt__info">
+          <div class="heroAlt__info-inner">
+            <div class="heroAlt__info-body">
+              <div class="heroAlt__info-head">
+                <p class="heroAlt__info-subtitle accent-color">
+                  Episode 1
+                  <span class="heroAlt__info-span accent-color"
+                    >FEATURED EPISODE</span
+                  >
+                </p>
+                <h1 class="heroAlt__info-title h3" id="heroALt-title">
+                  Are you a Perplexed Mind Person?
+                </h1>
+              </div>
+              <div class="heroAlt__info-textarea">
+                <p class="heroAlt__info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud.
+                </p>
+              </div>
+            </div>
+            <div class="heroAlt__publisher">
+              <div class="heroAlt__publisher-body">
+                <img
+                  class="heroAlt__publisher-img"
+                  src="./images/heroAlt/avatar.png"
+                  alt=""
+                  width="36"
+                  height="36"
+                />
+                <p class="heroAlt__publisher-title">
+                  Hosted by:
+                  <span class="heroAlt__publisher-name accent-color"
+                    >Jane Doe</span
+                  >
+                </p>
+              </div>
+              <p class="heroAlt__publisher-text">Sep 22, 2021</p>
+            </div>
+          </div>
+          <div class="heroAlt__actions">
+            <a href="" class="heroAlt__actions-button button button--dark"
+              >SUBSCRIBE</a
+            >
+            <a href="" class="heroAlt__actions-button button button--light"
+              ><img
+                class="heroAlt__actions-play"
+                src="./images/heroAlt/Play.svg"
+                alt=""
+              />LISTEN NOW <span class="accent-color">(46 min)</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="heroAlt__dops container">
+        <p class="heroAlt__dops-text">Tags:</p>
+
+        <ul class="heroAlt__dops-list">
+          <li class="card__topic-item">
+            <a href="" class="card__topic-link">mind-behaviour</a>
+          </li>
+          <li class="card__topic-item">
+            <a href="" class="card__topic-link">health</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

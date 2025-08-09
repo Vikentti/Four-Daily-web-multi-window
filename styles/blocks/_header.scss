@@ -93,6 +93,11 @@
         padding: rem(15) rem(30);
         font-size: rem(15);
       }
+
+      &--active {
+        color: var(--color-accent);
+        cursor: default;
+      }
     }
   }
 

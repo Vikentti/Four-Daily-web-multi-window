@@ -510,6 +510,10 @@ button[aria-label]::before {
     font-size: 0.9375rem;
   }
 }
+.header__menu-link--active {
+  color: var(--color-accent);
+  cursor: default;
+}
 .header__button-list {
   display: flex;
   column-gap: 1.25rem;
@@ -1465,7 +1469,7 @@ button[aria-label]::before {
 }
 .card__body {
   display: grid;
-  grid-template-columns: 10.375rem 1fr;
+  grid-template-columns: auto 1fr;
   gap: 1.25rem;
 }
 @media (width <= 30.06125rem) {
@@ -2021,6 +2025,116 @@ button[aria-label]::before {
   .app__bg-vector {
     display: none;
   }
+}
+
+.heroAlt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  padding-top: 6.25rem;
+  background-color: var(--color-light-second);
+}
+.heroAlt__main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 7.375rem;
+}
+.heroAlt__imges {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.581875rem;
+  width: 29.5rem;
+  height: 29.5rem;
+  background-image: url(../../images/heroAlt/1.png);
+  background-size: cover;
+  border-radius: 0.5rem;
+  box-shadow: 12px 12px 0 0 var(--color-blue);
+}
+.heroAlt__imges-text {
+  color: var(--color-blue);
+  font-size: 2.875rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 140%;
+}
+.heroAlt__sos1al {
+  display: flex;
+  justify-content: end;
+  column-gap: 0.790625rem;
+}
+.heroAlt__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.75rem;
+}
+.heroAlt__info-inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.heroAlt__info-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4375rem;
+}
+.heroAlt__info-head {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.heroAlt__info-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.heroAlt__info-span {
+  padding: 0.1875rem 0.375rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+.heroAlt__info-textarea {
+  padding-top: 1.25rem;
+  border-top: 1px solid black;
+  color: var(--color-gray);
+}
+.heroAlt__info-text {
+  width: 103%;
+}
+.heroAlt__publisher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-gray);
+}
+.heroAlt__publisher-body {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+.heroAlt__publisher-img {
+  border-radius: 62.4375rem;
+}
+.heroAlt__publisher-name {
+  font-weight: 700;
+}
+.heroAlt__actions {
+  display: flex;
+  justify-content: start;
+  column-gap: 1.25rem;
+}
+.heroAlt__actions-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.heroAlt__actions-play {
+  padding-right: 0.625rem;
 }
 
 /*# sourceMappingURL=main.css.map */
