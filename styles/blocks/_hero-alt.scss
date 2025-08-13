@@ -6,12 +6,44 @@
   flex-direction: column;
   row-gap: rem(80);
   padding-top: rem(100);
+  padding-bottom: rem(40);
   background-color: var(--color-light-second);
+
+  &::after {
+    position: absolute;
+    content: url("../../images/Hero/black_line.svg");
+    top: rem(60);
+    left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: url(../../images/Hero/stars.svg);
+    bottom: rem(100);
+    right: 0;
+  }
+
+  &::before,
+  &::after {
+    z-index: 0;
+    @include mobile {
+      display: none;
+    }
+  }
 
   &__main {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: rem(118);
+    z-index: 2;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: rem(25);
+    }
   }
 
   &__imges {
@@ -19,12 +51,17 @@
     flex-direction: column;
     justify-content: space-between;
     padding: rem(25.31);
-    width: rem(472);
+    width: 100%;
     height: rem(472);
     background-image: url(../../images/heroAlt/1.png);
     background-size: cover;
     border-radius: rem(8);
     box-shadow: 12px 12px 0 0 var(--color-blue);
+
+    @include mobile-above {
+      width: rem(472);
+      height: rem(472);
+    }
 
     &-text {
       color: var(--color-blue);
@@ -86,6 +123,10 @@
 
     &-text {
       width: 103%;
+
+      @include tablet {
+        width: 100%;
+      }
     }
   }
 
@@ -116,6 +157,12 @@
     justify-content: start;
     column-gap: rem(20);
 
+    @include mobile-s {
+      flex-direction: column;
+      row-gap: rem(10);
+      width: 70%;
+    }
+
     &-button {
       display: flex;
       justify-content: center;
@@ -125,6 +172,25 @@
 
     &-play {
       padding-right: rem(10);
+    }
+  }
+
+  &__dops {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: rem(60);
+    width: 100%;
+
+    &-text {
+      font-weight: 700;
+      font-size: rem(14);
+      color: var(--color-gray);
+    }
+
+    &-list {
+      display: flex;
+      column-gap: rem(6);
     }
   }
 }
