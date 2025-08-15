@@ -1,10 +1,21 @@
 @use "../helpers" as *;
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: rem(20);
   padding: rem(16);
+  border-radius: rem(18);
+  border: 2px solid #000;
+  background-color: #fff;
+  z-index: 3;
+
+  @include hover {
+    transition-duration: var(--transition-duration);
+    box-shadow: 10px 10px 0 0 #81adc8;
+    background-color: var(--color-light-second);
+  }
 
   @include tablet {
     padding: rem(12);
@@ -12,6 +23,17 @@
 
   @include mobile {
     padding: rem(8);
+  }
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__body {

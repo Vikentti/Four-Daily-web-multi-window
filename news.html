@@ -25,9 +25,7 @@
           <nav class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link header__menu-link--active"
-                  >Episodes</a
-                >
+                <a href="#" class="header__menu-link">Episodes</a>
               </li>
               <li class="header__menu-item">
                 <a href="#" class="header__menu-link">About</a>
@@ -41,7 +39,7 @@
               <li class="header__button-item">
                 <a
                   href="#"
-                  class="header__button-link button button--light button--small is-active"
+                  class="header__button-link button button--light button--small"
                   >RECENT EPISODES</a
                 >
               </li>
@@ -70,105 +68,17 @@
       </div>
     </header>
     <main>
-      <section class="heroAlt" aria-label="heroALt-title">
-        <div class="heroAlt__main container">
-          <div class="heroAlt__imges">
-            <div class="heroAlt__sos1al">
-              <a href="" class="heroAlt__sos1al-link">
-                <img
-                  src="./icons/google podcast.svg"
-                  alt=""
-                  class="heroAlt_sos1al-img"
-                  width="30.37"
-                  height="30.37"
-                />
-              </a>
-              <a href="" class="heroAlt__sos1al-link">
-                <img
-                  src="./icons/spotify.svg"
-                  alt=""
-                  class="heroAlt_sos1al-img"
-                  width="30.37"
-                  height="30.37"
-                />
-              </a>
-              <a href="" class="heroAlt__sos1al-link">
-                <img
-                  src="./icons/youtube.svg"
-                  alt=""
-                  class="heroAlt_sos1al-img"
-                  width="30.37"
-                  height="30.37"
-                />
-              </a>
-            </div>
-            <p class="heroAlt__imges-text">Perplexed Mind</p>
-          </div>
-          <div class="heroAlt__info">
-            <div class="heroAlt__info-inner">
-              <div class="heroAlt__info-body">
-                <div class="heroAlt__info-head">
-                  <p class="heroAlt__info-subtitle accent-color">
-                    Episode 1
-                    <span class="heroAlt__info-span accent-color"
-                      >FEATURED EPISODE</span
-                    >
-                  </p>
-                  <h1 class="heroAlt__info-title h3" id="heroALt-title">
-                    Are you a Perplexed Mind Person?
-                  </h1>
-                </div>
-                <div class="heroAlt__info-textarea">
-                  <p class="heroAlt__info-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud.
-                  </p>
-                </div>
-              </div>
-              <div class="heroAlt__publisher">
-                <div class="heroAlt__publisher-body">
-                  <img
-                    class="heroAlt__publisher-img"
-                    src="./images/heroAlt/avatar.png"
-                    alt=""
-                    width="36"
-                    height="36"
-                  />
-                  <p class="heroAlt__publisher-title">
-                    Hosted by:
-                    <span class="heroAlt__publisher-name accent-color"
-                      >Jane Doe</span
-                    >
-                  </p>
-                </div>
-                <p class="heroAlt__publisher-text">Sep 22, 2021</p>
-              </div>
-            </div>
-            <div class="heroAlt__actions">
-              <a href="" class="heroAlt__actions-button button button--dark"
-                >SUBSCRIBE</a
-              >
-              <a href="" class="heroAlt__actions-button button button--light"
-                ><img
-                  class="heroAlt__actions-play"
-                  src="./images/heroAlt/Play.svg"
-                  alt=""
-                />LISTEN NOW <span class="accent-color">(46 min)</span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="heroAlt__dops container">
-          <p class="heroAlt__dops-text">Tags:</p>
-          <ul class="heroAlt__dops-list">
-            <li class="card__topic-item">
-              <a href="" class="card__topic-link">mind-behaviour</a>
-            </li>
-            <li class="card__topic-item">
-              <a href="" class="card__topic-link">health</a>
-            </li>
-          </ul>
+      <section class="hero" aria-label="hero-title">
+        <div class="hero__main">
+          <h1 class="hero__main-title" id="hero-title">
+            Article <br />and
+            <span class="accent-color">News</span>
+          </h1>
+          <p class="hero__main-subtitle gray-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
+            tempor incididunt <br />
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
+          </p>
         </div>
       </section>
 
@@ -180,7 +90,7 @@
               class="headline__title latest__header-title h2"
               id="latest__title"
             >
-              Latest Episode
+              Latest Posts
             </h2>
             <p class="headline__subtitle"></p>
           </div>
@@ -229,7 +139,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Comedy
+                News
               </button>
               <button
                 class="tabs__button h4"
@@ -241,7 +151,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Education
+                Tips & Trick
               </button>
               <button
                 class="tabs__button h4"
@@ -253,7 +163,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                Health
+                Podcast
               </button>
               <button
                 class="tabs__button h4"
@@ -265,19 +175,7 @@
                 aria-selected="false"
                 tabindex="-1"
               >
-                News
-              </button>
-              <button
-                class="tabs__button h4"
-                id="tab-7"
-                type="button"
-                role="tab"
-                aria-controls="tabpanel-7"
-                data-js-tabs-button
-                aria-selected="false"
-                tabindex="-1"
-              >
-                Tech
+                Productivity
               </button>
             </div>
           </header>
@@ -289,336 +187,177 @@
               tabindex="0"
               data-js-tabs-content
             >
-              <ul class="latest__list card__list">
-                <li class="latest__item">
-                  <div class="card">
-                    <a class="card__body" href="">
+              <ul class="news__list news__list-alt">
+                <li class="news__item">
+                  <div class="news__card card card--wide">
+                    <a class="card__body card__body--wide" href="">
                       <img
+                        src="./images/news/1.png"
                         class="card__body-img"
-                        src="./images/episodes/1.png"
-                        width="166"
-                        height="166"
-                        loading="lazy"
+                        alt=""
+                        width="538"
+                        height="320"
                       />
-                      <div class="card__info">
-                        <p class="card__info-title accent-color">
-                          Eps. 6
-                          <span class="card__info-title--main accent-color h4"
-                            >Pandemic Becoming Endemic</span
-                          >
-                        </p>
-                        <p class="card__info-text">
+                      <div class="card__info card__info--wide">
+                        <div class="card__info-title card__info-title--wide">
+                          <p class="card__info-subtitle">PODCAST</p>
+                          <p class="card__info-title--main accent-color h3">
+                            Setup your own podcast
+                          </p>
+                        </div>
+                        <p class="card__info-text card__info-text--wide">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur ac ultrices odio.
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minimvel iam, quis
+                          nostrud exercitation ullamco laboris...
                         </p>
                       </div>
                     </a>
-                    <div class="card__topic">
+                    <div class="card__topic card__topic--wide">
                       <ul class="card__topic-list">
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">covid-19</a>
+                          <a href="" class="card__topic-link">business</a>
                         </li>
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">health</a>
+                          <a href="" class="card__topic-link">startup</a>
                         </li>
                       </ul>
                       <div class="card__topic-aditions">
-                        <p class="card__topic-text">Hosted by:</p>
-                        <div class="card__img">
-                          <div class="card__img-container">
-                            <img
-                              class="card__img-1 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar1.jpg"
-                              loading="lazy"
-                            />
-                            <img
-                              class="card__img-2 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar2.png"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
+                        <time datetime="2021-09-14" class="card__topic-text"
+                          >Sep 14, 2021</time
+                        >
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="latest__item">
-                  <div class="card">
-                    <a class="card__body" href="">
+                <li class="news__item">
+                  <div class="news__card card card--wide">
+                    <a class="card__body card__body--wide" href="">
                       <img
+                        src="./images/news/2.png"
                         class="card__body-img"
-                        src="./images/episodes/2.png"
-                        width="166"
-                        height="166"
-                        loading="lazy"
+                        alt=""
+                        width="538"
+                        height="320"
                       />
-                      <div class="card__info">
-                        <p class="card__info-title accent-color">
-                          Eps. 5 <br />
-                          <span class="card__info-title--main h4"
-                            >Tesla Autopilot Controversy</span
-                          >
-                        </p>
-                        <p class="card__info-text">
+                      <div class="card__info card__info--wide">
+                        <div class="card__info-title card__info-title--wide">
+                          <p class="card__info-subtitle">TIPS & TRICK</p>
+                          <p class="card__info-title--main h3">
+                            Doodle artwork 101
+                          </p>
+                        </div>
+                        <p class="card__info-text card__info-text--wide">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur ac ultrices odio.
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minimvel iam, quis
+                          nostrud exercitation ullamco laboris...
                         </p>
                       </div>
                     </a>
-                    <div class="card__topic">
+                    <div class="card__topic card__topic--wide">
                       <ul class="card__topic-list">
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">automation</a>
+                          <a href="" class="card__topic-link">art</a>
                         </li>
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">tech</a>
+                          <a href="" class="card__topic-link">creative</a>
+                        </li>
+                        <li class="card__topic-item">
+                          <a href="" class="card__topic-link">tips and trick</a>
                         </li>
                       </ul>
                       <div class="card__topic-aditions">
-                        <p class="card__topic-text">Hosted by:</p>
-                        <div class="card__img">
-                          <div class="card__img-container">
-                            <img
-                              class="card__img-1 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar1.jpg"
-                              loading="lazy"
-                            />
-                            <img
-                              class="card__img-2 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar2.png"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
+                        <time datetime="2021-09-12" class="card__topic-text"
+                          >Sep 12, 2021</time
+                        >
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="latest__item">
-                  <div class="card">
-                    <a class="card__body" href="">
+                <li class="news__item">
+                  <div class="news__card card card--wide">
+                    <a class="card__body card__body--wide" href="">
                       <img
+                        src="./images/news/1.png"
                         class="card__body-img"
-                        src="./images/episodes/3.png"
-                        width="166"
-                        height="166"
-                        loading="lazy"
+                        alt=""
+                        width="538"
+                        height="320"
                       />
-                      <div class="card__info">
-                        <p class="card__info-title accent-color">
-                          Eps. 4 <br />
-                          <span class="card__info-title--main h4"
-                            >Women's Rights? Is it alright?</span
-                          >
-                        </p>
-                        <p class="card__info-text">
+                      <div class="card__info card__info--wide">
+                        <div class="card__info-title card__info-title--wide">
+                          <p class="card__info-subtitle">PODCAST</p>
+                          <p class="card__info-title--main accent-color h3">
+                            Setup your own podcast
+                          </p>
+                        </div>
+                        <p class="card__info-text card__info-text--wide">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur ac ultrices odio.
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minimvel iam, quis
+                          nostrud exercitation ullamco laboris...
                         </p>
                       </div>
                     </a>
-                    <div class="card__topic">
+                    <div class="card__topic card__topic--wide">
                       <ul class="card__topic-list">
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">women’s rights</a>
+                          <a href="" class="card__topic-link">business</a>
+                        </li>
+                        <li class="card__topic-item">
+                          <a href="" class="card__topic-link">startup</a>
                         </li>
                       </ul>
                       <div class="card__topic-aditions">
-                        <p class="card__topic-text">Hosted by:</p>
-                        <div class="card__img">
-                          <div class="card__img-container">
-                            <img
-                              class="card__img-1 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar1.jpg"
-                              loading="lazy"
-                            />
-                            <img
-                              class="card__img-2 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar2.png"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
+                        <time datetime="2021-09-14" class="card__topic-text"
+                          >Sep 14, 2021</time
+                        >
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="latest__item">
-                  <div class="card">
-                    <a class="card__body" href="">
+                <li class="news__item">
+                  <div class="news__card card card--wide">
+                    <a class="card__body card__body--wide" href="">
                       <img
+                        src="./images/news/2.png"
                         class="card__body-img"
-                        src="./images/episodes/4.png"
-                        width="166"
-                        height="166"
-                        loading="lazy"
+                        alt=""
+                        width="538"
+                        height="320"
                       />
-                      <div class="card__info">
-                        <p class="card__info-title accent-color">
-                          Eps. 3 <br />
-                          <span class="card__info-title--main accent-color h4"
-                            >How to Deal with Self–Confidence</span
-                          >
-                        </p>
-                        <p class="card__info-text">
+                      <div class="card__info card__info--wide">
+                        <div class="card__info-title card__info-title--wide">
+                          <p class="card__info-subtitle">TIPS & TRICK</p>
+                          <p class="card__info-title--main h3">
+                            Doodle artwork 101
+                          </p>
+                        </div>
+                        <p class="card__info-text card__info-text--wide">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur ac ultrices odio.
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minimvel iam, quis
+                          nostrud exercitation ullamco laboris...
                         </p>
                       </div>
                     </a>
-                    <div class="card__topic">
+                    <div class="card__topic card__topic--wide">
                       <ul class="card__topic-list">
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">self-esteem</a>
+                          <a href="" class="card__topic-link">art</a>
                         </li>
                         <li class="card__topic-item">
-                          <a href="" class="card__topic-link">health</a>
+                          <a href="" class="card__topic-link">creative</a>
+                        </li>
+                        <li class="card__topic-item">
+                          <a href="" class="card__topic-link">tips and trick</a>
                         </li>
                       </ul>
                       <div class="card__topic-aditions">
-                        <p class="card__topic-text">Hosted by:</p>
-                        <div class="card__img">
-                          <div class="card__img-container">
-                            <img
-                              class="card__img-1 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar1.jpg"
-                              loading="lazy"
-                            />
-                            <img
-                              class="card__img-2 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar2.png"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="latest__item">
-                  <div class="card">
-                    <a class="card__body" href="">
-                      <img
-                        class="card__body-img"
-                        src="./images/episodes/5.png"
-                        width="166"
-                        height="166"
-                        loading="lazy"
-                      />
-                      <div class="card__info">
-                        <p class="card__info-title accent-color">
-                          Eps. 2 <br />
-                          <span class="card__info-title--main accent-color h4"
-                            >Type of Social Classes of People</span
-                          >
-                        </p>
-                        <p class="card__info-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit.
-                        </p>
-                      </div>
-                    </a>
-                    <div class="card__topic">
-                      <ul class="card__topic-list">
-                        <li class="card__topic-item">
-                          <a href="" class="card__topic-link">social class</a>
-                        </li>
-                        <li class="card__topic-item">
-                          <a href="" class="card__topic-link">wealth</a>
-                        </li>
-                      </ul>
-                      <div class="card__topic-aditions">
-                        <p class="card__topic-text">Hosted by:</p>
-                        <div class="card__img">
-                          <div class="card__img-container">
-                            <img
-                              class="card__img-1 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar1.jpg"
-                              loading="lazy"
-                            />
-                            <img
-                              class="card__img-2 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar2.png"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="latest__item">
-                  <div class="card">
-                    <a class="card__body" href="">
-                      <img
-                        class="card__body-img"
-                        src="./images/episodes/6.png"
-                        width="166"
-                        height="166"
-                        loading="lazy"
-                      />
-                      <div class="card__info">
-                        <p class="card__info-title accent-color">
-                          Eps. 1 <br />
-                          <span class="card__info-title--main h4"
-                            >Are you a Perplexed Mind Person?</span
-                          >
-                        </p>
-                        <p class="card__info-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Curabitur ac ultrices odio.
-                        </p>
-                      </div>
-                    </a>
-                    <div class="card__topic">
-                      <ul class="card__topic-list">
-                        <li class="card__topic-item">
-                          <a href="" class="card__topic-link">mind-behaviour</a>
-                        </li>
-                        <li class="card__topic-item">
-                          <a href="" class="card__topic-link">health</a>
-                        </li>
-                      </ul>
-                      <div class="card__topic-aditions">
-                        <p class="card__topic-text">Hosted by:</p>
-                        <div class="card__img">
-                          <div class="card__img-container">
-                            <img
-                              class="card__img-1 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar1.jpg"
-                              loading="lazy"
-                            />
-                            <img
-                              class="card__img-2 card__img-small"
-                              width="26"
-                              height="26"
-                              src="./images/episodes/avatar2.png"
-                              loading="lazy"
-                            />
-                          </div>
-                        </div>
+                        <time datetime="2021-09-12" class="card__topic-text"
+                          >Sep 12, 2021</time
+                        >
                       </div>
                     </div>
                   </div>

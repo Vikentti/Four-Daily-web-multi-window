@@ -22,9 +22,11 @@
 @use "blocks/news";
 @use "blocks/app";
 @use "blocks/hero-alt";
+@use "blocks/tabs";
+@use "blocks/latest";
 
-.header,
-.footer,
-main > *:not(:last-of-type) {
-  display: none !important;
-}
+// .header,
+// .footer,
+// main > *:not(:last-of-type) {
+//   display: none !important;
+// }

@@ -1,0 +1,38 @@
+@use "../helpers" as *;
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(100);
+
+  &__header {
+    overflow-x: auto;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(20);
+    border-bottom: solid 1px black;
+  }
+
+  &__button {
+    padding: rem(8) rem(16);
+    border: none;
+    color: var(--color-gray);
+    font-weight: 500;
+
+    &.is-active {
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__content:not(.is-active) {
+    display: none;
+  }
+}

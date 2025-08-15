@@ -47,4 +47,9 @@
       font-size: rem(12);
     }
   }
+
+  &.is-active {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
 }
