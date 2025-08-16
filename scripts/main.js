@@ -3,7 +3,7 @@ import Carusel from "./Carusel.js";
 import TabsCollection from "./Tabs.js";
 
 new Header();
-if (document.querySelector("[data-js-header]")) {
-  new Header();
+if (document.querySelector("[data-js-carusel]")) {
+  new Carusel();
 }
 new TabsCollection();
