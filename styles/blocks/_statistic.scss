@@ -1,0 +1,50 @@
+@use "../helpers" as *;
+
+.statistic {
+  &__list {
+    @include abs-x;
+
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(20);
+    bottom: rem(-115);
+
+    @include mobile {
+      translate: 0;
+      position: static;
+      flex-direction: column;
+      align-items: center;
+      row-gap: rem(40);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    row-gap: rem(20);
+    padding-block: fluid(59, 20);
+    width: fluid(373, 150);
+    height: fluid(235, 100);
+    border: 1.5px solid black;
+    border-radius: rem(8);
+    box-shadow: 6px 6px 0 0 var(--color-accent);
+    background-color: #fff;
+    bottom: rem(-37);
+
+    @include mobile {
+      width: rem(250);
+      height: rem(170);
+    }
+  }
+
+  &__value {
+    color: var(--color-accent);
+  }
+
+  &__sign {
+    color: var(--color-dark);
+  }
+}

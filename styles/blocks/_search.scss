@@ -1,0 +1,42 @@
+@use "../helpers" as *;
+
+.search {
+  @include abs-x;
+  bottom: rem(-37);
+
+  &__inner {
+    position: relative;
+  }
+
+  &__input {
+    width: rem(570);
+    height: rem(74);
+    padding: rem(24) rem(40);
+    border: 1px solid black;
+    border-radius: rem(16);
+
+    @include mobile {
+      width: rem(400);
+    }
+
+    @include mobile-s {
+      width: rem(300);
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+    top: 24px;
+    left: 40px;
+  }
+
+  &:has(.is-active) {
+    .search__placeholder {
+      opacity: 0;
+    }
+  }
+}

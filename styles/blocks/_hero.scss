@@ -110,4 +110,14 @@
       width: fluid(275, 100);
     }
   }
+
+  &__dops {
+    display: flex;
+    column-gap: rem(20);
+    transform: translateY(-50px);
+
+    @include mobile {
+      transform: translateY(0);
+    }
+  }
 }

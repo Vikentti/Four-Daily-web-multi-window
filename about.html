@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Episodes</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__body container">
+        <a href="./index.html" class="header__logo logo">
+          <img
+            src="./images/Head/header_logo.svg"
+            class="logo__img"
+            aria-label="Home"
+            title="Home"
+            height="74"
+            width="74"
+          />
+        </a>
+
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="./episodes.html" class="header__menu-link">Episodes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link is-active">About</a>
+              </li>
+              <li class="header__menu-item">
+                <div class="accardion">
+                  <details class="accardion__details">
+                    <summary class="accardion__summary">
+                      <p class="accardion__title">More</p>
+                    </summary>
+                  </details>
+                  <div class="accardion__content">
+                    <div class="accardion__content-inner">
+                      <div class="accardion__content-body">
+                        <a href="./news.html" class="accardion__link">News</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="header__button-list">
+              <li class="header__button-item">
+                <a
+                  href="./episodes.html"
+                  class="header__button-link button button--light button--small"
+                  >RECENT EPISODES</a
+                >
+              </li>
+              <li class="header__button-item">
+                <a
+                  href="#"
+                  class="header__button-link button button--dark button--small"
+                  >SUBSCRIBE</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-label="hero-title">
+        <div class="hero__main">
+          <h1 class="hero__main-title" id="hero-title">
+            About <br />
+            <span class="accent-color">Pod of Cast</span>
+          </h1>
+          <p class="hero__main-subtitle gray-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod
+            tempor incididunt <br />
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam–quis.
+          </p>
+        </div>
+        <div class="hero__dops container">
+          <a href="" class="button button--light">BECOME SPONSOR</a>
+          <a href="" class="button button--dark">SUBSCRIBE</a>
+        </div>
+        <div class="hero__outer statistic">
+          <dl class="statistic__list container">
+            <div class="statistic__item">
+              <dt class="statistic__key">Community Members</dt>
+              <dd class="statistic__value h2">
+                76<span class="statistic__sign">K</span>
+              </dd>
+            </div>
+
+            <div class="statistic__item">
+              <dt class="statistic__key">Podcast Subscribers</dt>
+              <dd class="statistic__value h2">
+                128<span class="statistic__sign">K</span>
+              </dd>
+            </div>
+
+            <div class="statistic__item">
+              <dt class="statistic__key">Daily Listeners</dt>
+              <dd class="statistic__value h2">
+                59<span class="statistic__sign">K</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="review">
+        <header class="review__header headline">
+          <div class="headline__inner review__header-inner container">
+            <p class="headline__inner-dops"></p>
+            <h2
+              class="headline__title review__header-title h2"
+              id="review__title"
+            >
+              What our listeners say
+            </h2>
+            <p class="headline__subtitle">
+              Their experience throughout every platform
+            </p>
+          </div>
+        </header>
+        <div class="review__body container">
+          <img
+            src="./images/review/img.png"
+            alt=""
+            class="review__body-img"
+            loading="lazy"
+            width="1160"
+            height="640"
+          />
+          <div class="review__info">
+            <h3 class="review__info-title">About and History</h3>
+            <div class="review__info-text">
+              <p>
+                Eu non <span class="review__span">diam</span> phasellus
+                vestibulum lorem. Fringilla est ullamcorper eget nulla facilisi
+                etiam dignissim. Id diam vel quam
+                <span class="review__span">elementum pulvinar</span>.
+                <br /><br />
+                Elementum eu facilisis sed odio morbi quis commodo. Sed odio
+                morbi quis commodo odio aenean sed adipiscing odio diam. uno
+                fablotoson louw uit.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet,
+                <span class="review__span">consectetur adipiscing</span> elit.
+                Quam pellentesque at bibendum euismod tellus duis cursus
+                dignissim odio. Sit vulputate et integer in. Sit vel, senectus
+                iaculis morbi. <span class="review__span">Amet</span> interdum
+                imperdiet laoreet
+                <span class="review__span">morbi</span> tincidunt fermentum,
+                libero. Ante enim eget.
+                <br />
+                <br />
+
+                Viverra at porttitor accumsan. Orci non here
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="founder">
+        <div class="founder__body container">
+          <h3 class="founder__body-title">Founder and Main Host</h3>
+          <ul class="founder__list">
+            <li class="founder__item">
+              <img
+                src="./images/founder/avatar.png"
+                class="founder__img"
+                alt=""
+              />
+              <div class="founder__content">
+                <img
+                  src="./images/founder/1.svg"
+                  alt=""
+                  class="founder__content-img"
+                  width="130"
+                  height="130"
+                />
+                <div class="founder__info">
+                  <div class="founder__title">
+                    <p class="founder__title-host">Host 1</p>
+                    <h4 class="founder__title-name">Porter <br />Severus</h4>
+                  </div>
+                  <p class="founder__text">
+                    Lorem ipsum dolor sit amet con sectet piscing elit, sed do
+                    eiusmod tempor rarylet podofcast.
+                  </p>
+                  <div class="founder__links">
+                    <p class="founder__links-text">follow me:</p>
+                    <div class="founder__links-container">
+                      <a href="" class="founder__links-link">
+                        <img
+                          src="./images/founder/link1.svg"
+                          alt=""
+                          class="founder__links-img"
+                          width="20"
+                          height="20"
+                        />
+                      </a>
+                      <a href="" class="founder__links-link">
+                        <img
+                          src="./images/founder/link2.svg"
+                          alt=""
+                          class="founder__links-img"
+                          width="20"
+                          height="20"
+                        />
+                      </a>
+                      <a href="" class="founder__links-link">
+                        <img
+                          src="./images/founder/link3.svg"
+                          alt=""
+                          class="founder__links-img"
+                          width="20"
+                          height="20"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="founder__item">
+              <img
+                src="./images/founder/avatar2.png"
+                class="founder__img"
+                alt=""
+              />
+              <div class="founder__content">
+                <img
+                  src="./images/founder/2.svg"
+                  alt=""
+                  class="founder__content-img"
+                  width="130"
+                  height="130"
+                />
+                <div class="founder__info">
+                  <div class="founder__title">
+                    <p class="founder__title-host">Host 2</p>
+                    <h4 class="founder__title-name">Marques <br />Keith</h4>
+                  </div>
+                  <p class="founder__text">
+                    Lorem ipsum dolor sit amet con sectet piscing elit, sed do
+                    eiusmod tempor rarylet podofcast.
+                  </p>
+                  <div class="founder__links">
+                    <p class="founder__links-text">follow me:</p>
+                    <div class="founder__links-container">
+                      <a href="" class="founder__links-link">
+                        <img
+                          src="./images/founder/link1.svg"
+                          alt=""
+                          class="founder__links-img"
+                          width="20"
+                          height="20"
+                        />
+                      </a>
+                      <a href="" class="founder__links-link">
+                        <img
+                          src="./images/founder/link2.svg"
+                          alt=""
+                          class="founder__links-img"
+                          width="20"
+                          height="20"
+                        />
+                      </a>
+                      <a href="" class="founder__links-link">
+                        <img
+                          src="./images/founder/link3.svg"
+                          alt=""
+                          class="founder__links-img"
+                          width="20"
+                          height="20"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="official">
+        <header class="official__header headline">
+          <div class="headline__inner official__header-inner container">
+            <p class="headline__inner-dops"></p>
+            <h2
+              class="headline__title official__header-title h2"
+              id="official__title"
+            >
+              Our Sponsor
+            </h2>
+            <p class="headline__subtitle">Our current official sponsor</p>
+          </div>
+        </header>
+        <div class="official__body">
+          <div class="listeners__body carusel container" data-js-carusel>
+            <div class="carusel__body">
+              <ul class="carusel__list" data-js-carusel-container>
+                <li class="carusel__item">
+                  <div class="carusel__card carusel__card--v2">
+                    <img
+                      src="./images/current official sponsor/1.svg"
+                      class="carusel__card-img carusel__card-img--alt"
+                      loading="lazy"
+                      width="300"
+                      height="54"
+                    />
+                    <p class="carusel__card-text--small">
+                      Quis dictum cursus faucibus mattis dignissim. Pellentes
+                      que purus in sed sodales in mauris molestie. Eleifend
+                      estcon sctetur interdum eu in auctor. Gravida leo et.
+                    </p>
+                  </div>
+                </li>
+                <li class="carusel__item">
+                  <div class="carusel__card carusel__card--v2">
+                    <img
+                      src="./images/current official sponsor/2.svg"
+                      class="carusel__card-img carusel__card-img--alt"
+                      loading="lazy"
+                      width="194"
+                      height="54"
+                    />
+                    <p class="carusel__card-text--small">
+                      Quis dictum cursus faucibus mattis dignissim. Pellentes
+                      que purus in sed sodales in mauris molestie. Eleifend
+                      estcon sctetur interdum eu in auctor. Gravida leo et.
+                    </p>
+                  </div>
+                </li>
+                <li class="carusel__item">
+                  <div class="carusel__card carusel__card--v2">
+                    <img
+                      src="./images/current official sponsor/3.svg"
+                      class="carusel__card-img carusel__card-img--alt"
+                      loading="lazy"
+                      width="226"
+                      height="54"
+                    />
+                    <p class="carusel__card-text--small">
+                      Quis dictum cursus faucibus mattis dignissim. Pellentes
+                      que purus in sed sodales in mauris molestie. Eleifend
+                      estcon sctetur interdum eu in auctor. Gravida leo et.
+                    </p>
+                  </div>
+                </li>
+                <li class="carusel__item">
+                  <div class="carusel__card carusel__card--v2">
+                    <img
+                      src="./images/current official sponsor/1.svg"
+                      class="carusel__card-img carusel__card-img--alt"
+                      loading="lazy"
+                      width="300"
+                      height="54"
+                    />
+                    <p class="carusel__card-text--small">
+                      Quis dictum cursus faucibus mattis dignissim. Pellentes
+                      que purus in sed sodales in mauris molestie. Eleifend
+                      estcon sctetur interdum eu in auctor. Gravida leo et.
+                    </p>
+                  </div>
+                </li>
+                <li class="carusel__item">
+                  <div class="carusel__card carusel__card--v2">
+                    <img
+                      src="./images/current official sponsor/2.svg"
+                      class="carusel__card-img carusel__card-img--alt"
+                      loading="lazy"
+                      width="194"
+                      height="54"
+                    />
+                    <p class="carusel__card-text--small">
+                      Quis dictum cursus faucibus mattis dignissim. Pellentes
+                      que purus in sed sodales in mauris molestie. Eleifend
+                      estcon sctetur interdum eu in auctor. Gravida leo et.
+                    </p>
+                  </div>
+                </li>
+                <li class="carusel__item">
+                  <div class="carusel__card carusel__card--v2">
+                    <img
+                      src="./images/current official sponsor/3.svg"
+                      class="carusel__card-img carusel__card-img--alt"
+                      loading="lazy"
+                      width="226"
+                      height="54"
+                    />
+                    <p class="carusel__card-text--small">
+                      Quis dictum cursus faucibus mattis dignissim. Pellentes
+                      que purus in sed sodales in mauris molestie. Eleifend
+                      estcon sctetur interdum eu in auctor. Gravida leo et.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="carusel__buttons">
+              <button
+                class="carusel__button carusel__button-before"
+                data-js-carusel-prev
+              ></button>
+              <button
+                class="carusel__button carusel__button-after"
+                data-js-carusel-next
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__body container">
+        <div class="footer__lorem">
+          <div class="footer__lorem-year">
+            <a href="" class="footer__lorem-logo logo"
+              ><img
+                src="./images/Head/header_logo.svg"
+                alt="Logo"
+                class="logo__img"
+                width="74"
+                height="74"
+            /></a>
+            <p class="footer__lorem-data gray-color">©2021.</p>
+          </div>
+          <p class="footer__lorem-text gray-color">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+
+          <ul class="footer__lorem-links">
+            <li class="footer__lorem-item">
+              <a href="#" class="footer__lorem-link"
+                ><img
+                  src="./images/sosial/twitter.svg"
+                  class="footer__lorem-img"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="footer__lorem-item">
+              <a href="#" class="footer__lorem-link"
+                ><img
+                  src="./images/sosial/instagram.svg"
+                  class="footer__lorem-img"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="footer__lorem-item">
+              <a href="#" class="footer__lorem-link"
+                ><img
+                  src="./images/sosial/tiktok.svg"
+                  class="footer__lorem-img"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__about">
+          <ul class="footer__about-list">
+            <li class="footer__about-item">
+              <a href="#" class="footer__about-link">About</a>
+            </li>
+            <li class="footer__about-item">
+              <a href="#" class="footer__about-link accent-color"
+                >Testimonials</a
+              >
+            </li>
+            <li class="footer__about-item">
+              <a href="#" class="footer__about-link">Features</a>
+            </li>
+          </ul>
+          <ul class="footer__about-list">
+            <li class="footer__about-item">
+              <a href="#" class="footer__about-link accent-color">Episodes</a>
+            </li>
+            <li class="footer__about-item">
+              <a href="#" class="footer__about-link">Pricing</a>
+            </li>
+            <li class="footer__about-item">
+              <a href="#" class="footer__about-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__sosial">
+          <div class="footer__platforms">
+            <p class="fooeter__platforms-title gray-color">
+              Listen to episodes on your fav platform:
+            </p>
+            <ul class="footer__platforms-list">
+              <li class="footer__platforms-item">
+                <a href="#" class="footer__platform-link">
+                  <img
+                    src="./images/sosial/Google Podcast.svg"
+                    class="footer__platform-img"
+                    width="122"
+                    height="22"
+                  />
+                </a>
+              </li>
+              <li class="footer__platforms-item">
+                <a href="#" class="footer__platform-link">
+                  <img
+                    src="./images/sosial/Spotify.svg"
+                    class="footer__platform-img"
+                    width="80"
+                    height="22"
+                  />
+                </a>
+              </li>
+              <li class="footer__platforms-item">
+                <a href="#" class="footer__platform-link">
+                  <img
+                    src="./images/sosial/Youtube.svg"
+                    class="footer__platform-img"
+                    width="94"
+                    height="22"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__avalible">
+            <p class="footer__avalible-text gray-color">App available on:</p>
+            <ul class="footer__avalible-list">
+              <li class="footer__avalible-item">
+                <a href="#" class="footer__avalible-link">
+                  <img
+                    src="./images/sosial/app_store.svg"
+                    class="footer__avalible-img"
+                    width="36"
+                    height="36"
+                  />
+                </a>
+              </li>
+              <li class="footer__avalible-item">
+                <a href="#" class="footer__avalible-link">
+                  <img
+                    src="./images/sosial/google_play.svg"
+                    class="footer__avalible-img"
+                    width="36"
+                    height="36"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__dops container">
+        <p class="footer__dops-text gray-color">
+          ©2022. All Rights Reserved.
+          <span class="accent-color">Pod of Cast</span>
+        </p>
+        <ul class="footer__dops-list gray-color">
+          <li class="footer__dops-item">
+            <a href="#" class="footer__dops-link">Terms</a>
+          </li>
+          <li class="footer__dops-item">
+            <a href="#" class="footer__dops-link">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

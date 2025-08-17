@@ -1,9 +1,9 @@
 class Carusel {
   selectors = {
-    root: "[data-js-slider]",
-    container: "[data-js-slider-container]",
-    prevBtn: "[data-js-slider-prev]",
-    nextBtn: "[data-js-slider-next]",
+    root: "[data-js-carusel]",
+    container: "[data-js-carusel-container]",
+    prevBtn: "[data-js-carusel-prev]",
+    nextBtn: "[data-js-carusel-next]",
   };
 
   constructor() {

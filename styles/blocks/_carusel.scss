@@ -19,7 +19,7 @@
   &__card {
     display: flex;
     flex-direction: column;
-    row-gap: rem(32);
+    row-gap: rem(30);
     padding: rem(40);
     width: rem(555);
     background-color: var(--color-light-second);
@@ -35,6 +35,30 @@
 
     &-text {
       @include fluid-text(23, 18);
+
+      &--small {
+        font-size: 14px;
+        line-height: 160%;
+        color: var(--color-gray);
+      }
+    }
+
+    &--v2 {
+      justify-content: center;
+      align-items: center;
+      padding: rem(35) rem(17);
+      background-color: var(--color-light-main);
+      border: 1px solid var(--color-dark);
+      border-radius: rem(12);
+      text-align: center;
+    }
+
+    &-img {
+      &--alt {
+        padding-inline: rem(27.5);
+        padding-bottom: rem(20);
+        border-bottom: 1px solid var(--color-gray);
+      }
     }
   }
 

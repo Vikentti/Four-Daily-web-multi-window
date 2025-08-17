@@ -10,6 +10,14 @@
   box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
   text-align: center;
 
+  @include mobile {
+    padding: rem(10) rem(18);
+  }
+
+  @include mobile-s {
+    padding: rem(7) rem(15);
+  }
+
   &--dark {
     background-color: var(--color-dark);
     color: var(--color-light-main);
