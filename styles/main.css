@@ -2141,7 +2141,7 @@ button[aria-label]::before {
   padding: 1.581875rem;
   width: 100%;
   height: 29.5rem;
-  background-image: url(../../images/heroAlt/1.png);
+  background-image: url(../images/heroAlt/1.png);
   background-size: cover;
   border-radius: 0.5rem;
   box-shadow: 12px 12px 0 0 var(--color-blue);
@@ -2684,7 +2684,6 @@ button[aria-label]::before {
   }
 }
 .feedback-form__actions-text {
-  padding-right: 6.875rem;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 160%;
