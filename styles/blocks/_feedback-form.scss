@@ -1,0 +1,48 @@
+@use "../helpers" as *;
+
+.feedback-form {
+  display: grid;
+  gap: fluid(40, 20) rem(20);
+  padding-inline: rem(5);
+  padding-top: rem(40);
+  margin: 0 auto;
+  max-width: rem(766);
+
+  border-top: 1px solid var(--color-gray);
+
+  @include mobile-s-above {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__cell {
+    &--wide {
+      grid-column: -1/1;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: rem(110);
+
+    @include mobile {
+      column-gap: rem(30);
+    }
+
+    @include mobile-s {
+      flex-direction: column;
+      row-gap: rem(15);
+    }
+
+    &-text {
+      padding-right: rem(110);
+      font-size: rem(14);
+      font-weight: 700;
+      line-height: 160%;
+
+      @include mobile {
+        padding-right: 0;
+      }
+    }
+  }
+}
