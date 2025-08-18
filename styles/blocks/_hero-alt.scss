@@ -11,14 +11,14 @@
 
   &::after {
     position: absolute;
-    content: url("../../images/Hero/black_line.svg");
+    content: url("../images/Hero/black_line.svg");
     top: rem(60);
     left: 0;
   }
 
   &::before {
     position: absolute;
-    content: url(../../images/Hero/stars.svg);
+    content: url(../images/Hero/stars.svg);
     bottom: rem(100);
     right: 0;
   }

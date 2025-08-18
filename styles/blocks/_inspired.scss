@@ -61,14 +61,14 @@
 
     &::after {
       position: absolute;
-      content: url(../../images/inspire/line.svg);
+      content: url(../images/inspire/line.svg);
       left: rem(-65);
       bottom: 20%;
     }
 
     &::before {
       position: absolute;
-      content: url(../../images/inspire/Star.svg);
+      content: url(../images/inspire/Star.svg);
 
       top: 0;
       left: 100%;

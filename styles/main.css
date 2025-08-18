@@ -374,7 +374,7 @@ button[aria-label]::before {
   position: absolute;
   left: 50%;
   translate: -50%;
-  content: url(../../icons/red_zig-zag.svg);
+  content: url(../icons/red_zig-zag.svg);
   bottom: -5.375rem;
   z-index: 3;
 }
@@ -382,7 +382,7 @@ button[aria-label]::before {
   position: absolute;
   left: 50%;
   translate: -50%;
-  content: url(../../icons/red_zig-zag.svg);
+  content: url(../icons/red_zig-zag.svg);
   top: -4.6875rem;
   z-index: 3;
 }
@@ -391,7 +391,7 @@ button[aria-label]::before {
   position: absolute;
   left: 50%;
   translate: -50%;
-  content: url(../../icons/black-zig.svg);
+  content: url(../icons/black-zig.svg);
   bottom: -5.375rem;
   z-index: 3;
   overflow: visible;
@@ -400,7 +400,7 @@ button[aria-label]::before {
   position: absolute;
   left: 50%;
   translate: -50%;
-  content: url(../../icons/black-zig.svg);
+  content: url(../icons/black-zig.svg);
   top: -4.6875rem;
   z-index: 3;
 }
@@ -861,13 +861,13 @@ button[aria-label]::before {
 }
 .hero__main::after {
   position: absolute;
-  content: url("../../images/Hero/black_line.svg");
+  content: url("../images/Hero/black_line.svg");
   top: 3.75rem;
   left: 0;
 }
 .hero__main::before {
   position: absolute;
-  content: url(../../images/Hero/stars.svg);
+  content: url(../images/Hero/stars.svg);
   bottom: 6.25rem;
   right: 0;
 }
@@ -1023,22 +1023,22 @@ button[aria-label]::before {
   color: var(--color-blue);
 }
 .slider__slider-1 {
-  background-image: url(../../images/Hero/auto_scroll-1.png);
+  background-image: url(../images/Hero/auto_scroll-1.png);
 }
 .slider__slider-2 {
-  background-image: url(../../images/Hero/auto_scroll-2.png);
+  background-image: url(../images/Hero/auto_scroll-2.png);
 }
 .slider__slider-3 {
-  background-image: url(../../images/Hero/auto_scroll-3.png);
+  background-image: url(../images/Hero/auto_scroll-3.png);
 }
 .slider__slider-4 {
-  background-image: url(../../images/Hero/auto_scroll-4.png);
+  background-image: url(../images/Hero/auto_scroll-4.png);
 }
 .slider__slider-5 {
-  background-image: url(../../images/Hero/auto_scroll-5.png);
+  background-image: url(../images/Hero/auto_scroll-5.png);
 }
 .slider__slider-6 {
-  background-image: url(../../images/Hero/auto_scroll-6.png);
+  background-image: url(../images/Hero/auto_scroll-6.png);
 }
 
 .inspired {
@@ -1098,13 +1098,13 @@ button[aria-label]::before {
 }
 .inspired__comment::after {
   position: absolute;
-  content: url(../../images/inspire/line.svg);
+  content: url(../images/inspire/line.svg);
   left: -4.0625rem;
   bottom: 20%;
 }
 .inspired__comment::before {
   position: absolute;
-  content: url(../../images/inspire/Star.svg);
+  content: url(../images/inspire/Star.svg);
   top: 0;
   left: 100%;
   transform: translate(-85%, -55%);
@@ -1161,7 +1161,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/liseners/Sparkle.svg);
+  background-image: url(../images/liseners/Sparkle.svg);
   background-size: cover;
   top: 0;
   left: 0;
@@ -1361,7 +1361,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/benefits/svg.svg);
+  background-image: url(../images/benefits/svg.svg);
   background-size: cover;
   top: 0;
   left: 100%;
@@ -1453,7 +1453,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/episodes/svg.svg);
+  background-image: url(../images/episodes/svg.svg);
   background-size: cover;
   top: 0;
   left: 100%;
@@ -1676,7 +1676,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/sponsore/1.svg);
+  background-image: url(../images/sponsore/1.svg);
   background-size: cover;
   top: 0;
   left: 0;
@@ -1758,7 +1758,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/sponsore/Star.svg);
+  background-image: url(../images/sponsore/Star.svg);
   background-size: cover;
   top: 0;
   left: 100%;
@@ -1777,7 +1777,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/sponsore/Vector.svg);
+  background-image: url(../images/sponsore/Vector.svg);
   background-size: cover;
   bottom: 0;
   right: 100%;
@@ -1928,7 +1928,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/news/1.svg);
+  background-image: url(../images/news/1.svg);
   background-size: cover;
   top: 0;
   right: 100%;
@@ -1947,7 +1947,7 @@ button[aria-label]::before {
   height: var(--size);
   position: absolute;
   content: "";
-  background-image: url(../../images/news/2.svg);
+  background-image: url(../images/news/2.svg);
   background-size: cover;
   bottom: 0;
   left: 100%;
@@ -2101,13 +2101,13 @@ button[aria-label]::before {
 }
 .heroAlt::after {
   position: absolute;
-  content: url("../../images/Hero/black_line.svg");
+  content: url("../images/Hero/black_line.svg");
   top: 3.75rem;
   left: 0;
 }
 .heroAlt::before {
   position: absolute;
-  content: url(../../images/Hero/stars.svg);
+  content: url(../images/Hero/stars.svg);
   bottom: 6.25rem;
   right: 0;
 }
