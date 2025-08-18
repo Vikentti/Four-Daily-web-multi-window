@@ -259,7 +259,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: clamp(2.4375rem, 1.9732142857rem + 1.9047619048vw, 3.6875rem);
+  font-size: clamp(2.4375rem, 2.0196428571rem + 1.7142857143vw, 3.5625rem);
   line-height: 1.3;
 }
 
@@ -1063,8 +1063,13 @@ button[aria-label]::before {
     row-gap: 5rem;
   }
 }
+.inspired__header-inner {
+  width: 100%;
+}
 .inspired__title {
-  width: 45.9375rem;
+  width: 100%;
+  line-height: 120%;
+  letter-spacing: -0.02em;
 }
 .inspired__lorem-list {
   display: grid;
