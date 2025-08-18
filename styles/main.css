@@ -804,16 +804,8 @@ button[aria-label]::before {
   display: flex;
   justify-content: space-between;
   padding-top: 1.25rem;
+  border-top: 1px solid black;
   font-size: 0.75rem;
-}
-.footer__dops::after {
-  content: "";
-  position: absolute;
-  left: 125;
-  top: 0;
-  width: 97.5%;
-  height: 0.0625rem;
-  background-color: var(--color-dark);
 }
 .footer__dops-text {
   color: var(--color-gray);

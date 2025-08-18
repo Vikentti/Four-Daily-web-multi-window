@@ -162,17 +162,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: rem(20);
+    border-top: 1px solid black;
     font-size: rem(12);
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 125;
-      top: 0;
-      width: 97.5%;
-      height: rem(1);
-      background-color: var(--color-dark);
-    }
 
     &-text {
       color: var(--color-gray);
